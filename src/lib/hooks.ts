@@ -5,6 +5,7 @@ export interface Bookmarks {
   schemes: string[];
   countries: string[];
   orgs: string[];
+  doctrines: string[];
 }
 export type NoteMap = Record<string, string>;
 export interface QuizAttempt {
@@ -24,7 +25,7 @@ export interface Progress {
   revisionSeen: string[];
 }
 
-const emptyBookmarks: Bookmarks = { schemes: [], countries: [], orgs: [] };
+const emptyBookmarks: Bookmarks = { schemes: [], countries: [], orgs: [], doctrines: [] };
 const emptyProgress: Progress = { quizAttempts: [], mainsAttempts: [], revisionSeen: [] };
 
 export function useBookmarks() {

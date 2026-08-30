@@ -87,3 +87,17 @@ export interface Source {
   name: string;
   url: string;
 }
+
+export interface Doctrine {
+  id: string;
+  name: string;
+  period: string;
+  announcedBy: string;
+  summary: string;
+  keyIdeas: string[];
+  evolution: string;
+  currentRelevance: string;
+  prelims: string[];
+  mains: string;
+  sourceKey: string;
+}

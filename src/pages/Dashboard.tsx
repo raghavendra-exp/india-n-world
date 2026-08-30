@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ScrollText, Globe2, ListChecks, PenLine, ChevronRight } from "lucide-react";
+import { ScrollText, Globe2, ListChecks, PenLine, ChevronRight, Compass } from "lucide-react";
 import { SCHEMES } from "../data/schemes";
 import { COUNTRIES } from "../data/countries";
 import { SectionLabel, VerifyBanner } from "../components/ui";
@@ -48,6 +48,7 @@ export default function Dashboard({ progress, bookmarks }: { progress: Progress;
           <div className="grid sm:grid-cols-2 gap-3 mt-2">
             <QuickAction icon={ScrollText} title="Browse schemes" desc="Filter by sector, ministry, funding, DBT" to="/schemes" />
             <QuickAction icon={Globe2} title="Country profile" desc="Bilateral relations, prelims + mains facts" to="/ir" />
+            <QuickAction icon={Compass} title="Foreign policy doctrines" desc="Panchsheel to MAHASAGAR, with current relevance" to="/doctrines" />
             <QuickAction icon={ListChecks} title="Prelims Lab" desc="Statement-based MCQs with trap analysis" to="/prelims" />
             <QuickAction icon={PenLine} title="Mains Lab" desc="Timed answer writing with structure scoring" to="/mains" />
           </div>
@@ -87,7 +88,7 @@ export default function Dashboard({ progress, bookmarks }: { progress: Progress;
       </div>
 
       <div className="mt-6">
-        <VerifyBanner text="This dataset is a curated starter set (6 schemes, 6 countries, 7 organisations), not the full syllabus. Extend src/data/*.ts following the existing shape as you study — see the README." />
+        <VerifyBanner text="This dataset covers 16 schemes, 14 countries, 16 organisations and 8 foreign-policy doctrines, web-verified as of August 2026. Extend src/data/*.ts following the existing shape as you study — see the README." />
       </div>
     </div>
   );

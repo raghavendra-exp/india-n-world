@@ -1,6 +1,7 @@
 import { MCQ } from "./types";
 
 export const MCQS: MCQ[] = [
+  // ---------- Schemes ----------
   {
     id: "q1", topic: "Schemes", question: "Consider the following statements about PM-KISAN:\n1. It is a Centrally Sponsored Scheme with cost shared between Centre and States.\n2. Payment is made in three equal instalments of ₹2,000 each.\nWhich of the statements given above is/are correct?",
     options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"], answer: 1,
@@ -15,6 +16,84 @@ export const MCQS: MCQ[] = [
     trap: "Do not confuse the 100-day guarantee with State-specific top-ups some States provide from their own funds.",
     difficulty: "Easy",
   },
+  {
+    id: "q6", topic: "Schemes", question: "Ayushman Bharat — PM-JAY provides a health cover of what amount per family per year?",
+    options: ["₹1 lakh", "₹2 lakh", "₹5 lakh", "₹10 lakh"], answer: 2,
+    explanation: "PM-JAY provides ₹5 lakh per family per year on a family floater basis, with no cap on family size or age.",
+    trap: "The 'family floater, no cap on size/age' feature is a common statement-based trap distinct from the amount itself.",
+    difficulty: "Easy",
+  },
+  {
+    id: "q9", topic: "Schemes", question: "The subsidy under PM Surya Ghar: Muft Bijli Yojana for a household installing a 2kW rooftop solar system is capped at approximately:",
+    options: ["₹30,000", "₹48,000", "₹60,000", "₹78,000"], answer: 2,
+    explanation: "The subsidy is ₹30,000/kW for the first 2kW — so a 2kW system gets ₹60,000. The ₹78,000 figure is the cap for 3kW-and-above systems (₹30,000×2 + ₹18,000 for the 3rd kW).",
+    trap: "Candidates often quote the ₹78,000 headline figure without checking it applies to 3kW+ systems, not the base 2kW tier.",
+    difficulty: "Hard",
+  },
+  {
+    id: "q10", topic: "Schemes", question: "Which of the following best describes PM Vishwakarma?",
+    options: [
+      "A pension scheme for organised-sector industrial workers",
+      "A support scheme for traditional artisans and craftspeople across 18 identified trades",
+      "A credit guarantee scheme exclusively for women entrepreneurs",
+      "A scholarship scheme for engineering students",
+    ], answer: 1,
+    explanation: "PM Vishwakarma (launched September 2023) supports traditional artisans/craftspeople across 18 trades with a digital ID, skill training, a ₹15,000 toolkit incentive, and collateral-free loans.",
+    trap: "The scheme name evokes a generic 'worker welfare' scheme; the trap is not recognising its specific artisan-trade focus.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q11", topic: "Schemes", question: "Under the Startup India initiative, Section 80-IAC of the Income Tax Act provides:",
+    options: [
+      "A permanent 15% concessional tax rate for all startups",
+      "100% tax deduction on profits for any 3 consecutive years within the first 10 years of incorporation",
+      "Exemption from GST for the first 5 years",
+      "A one-time cash grant of ₹10 lakh to every recognised startup",
+    ], answer: 1,
+    explanation: "Section 80-IAC gives DPIIT-recognised eligible startups a 100% profit-tax deduction for any 3 consecutive years within their first 10 years — a tax holiday, not a cash grant or GST exemption.",
+    trap: "Section 115BAB's 15% concessional rate (for new manufacturing companies) is a different provision often confused with 80-IAC.",
+    difficulty: "Hard",
+  },
+  {
+    id: "q12", topic: "Schemes", question: "The Production Linked Incentive (PLI) scheme currently covers how many key sectors?",
+    options: ["8", "10", "14", "20"], answer: 2,
+    explanation: "PLI schemes have been notified for 14 key sectors (electronics, pharma, telecom, textiles, solar PV, automobiles/EVs, specialty steel, drones, food processing, and others) with a combined outlay of about ₹1.97 lakh crore.",
+    trap: "10 was the number of sectors covered in the original November 2020 tranche before later sectors (textiles, solar PV Tranche-II, drones, etc.) were added, bringing the total to 14.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q13", topic: "Schemes", question: "Jal Jeevan Mission's objective of 'Har Ghar Jal' specifically refers to:",
+    options: [
+      "A functional household tap connection providing potable water to every rural household",
+      "Free electricity to every rural household",
+      "A toilet in every household under Swachh Bharat Mission",
+      "A bank account for every rural household",
+    ], answer: 0,
+    explanation: "Jal Jeevan Mission's 'Har Ghar Jal' tagline refers specifically to Functional Household Tap Connections (FHTC) for potable water, implemented under the Ministry of Jal Shakti.",
+    trap: "Candidates sometimes conflate 'Har Ghar' taglines across different schemes (Har Ghar Jal vs Har Ghar Tiranga vs Har Ghar Nal Yojana informally used names) — the ministry and specific objective must be matched carefully.",
+    difficulty: "Easy",
+  },
+  {
+    id: "q14", topic: "Schemes", question: "Which of the following statements about the financial-inclusion trio (PMJDY, PMJJBY, PMSBY) is correct?",
+    options: [
+      "All three are entirely free with no premium paid by the beneficiary",
+      "PMJDY is a bank account scheme; PMJJBY and PMSBY are contributory insurance schemes with a small annual premium",
+      "PMJJBY offers accident cover and PMSBY offers life cover",
+      "All three schemes are administered exclusively by LIC",
+    ], answer: 1,
+    explanation: "PMJDY (Jan Dhan) provides zero-balance bank accounts; PMJJBY (life cover, ~₹436/year) and PMSBY (accident cover, ~₹20/year) are auto-debited contributory insurance schemes, not free.",
+    trap: "Swapping PMJJBY (Jeevan Jyoti = life) and PMSBY (Suraksha = accident/safety) cover types is a classic UPSC-style trap given their similar names.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q15", topic: "Schemes", question: "PM SHRI Schools aim to develop selected existing government schools as models demonstrating the implementation of:",
+    options: ["The Right to Education Act, 2009", "National Education Policy (NEP) 2020", "The Sarva Shiksha Abhiyan framework", "The Digital India programme"], answer: 1,
+    explanation: "PM SHRI schools (over 14,000 targeted) are meant to be exemplar schools showcasing all components of NEP 2020, selected via a challenge-mode process among States/UTs.",
+    trap: "Sarva Shiksha Abhiyan is an older, now-subsumed programme (folded into Samagra Shiksha) — not the current policy framework PM SHRI demonstrates.",
+    difficulty: "Medium",
+  },
+
+  // ---------- International Organisations ----------
   {
     id: "q3", topic: "International Organisations", question: "Which of the following is/are founding member(s) of the QUAD?\n1. India\n2. Japan\n3. South Korea\n4. Australia",
     options: ["1, 2 and 4 only", "1, 2, 3 and 4", "1 and 4 only", "2, 3 and 4 only"], answer: 0,
@@ -37,12 +116,63 @@ export const MCQS: MCQ[] = [
     difficulty: "Easy",
   },
   {
-    id: "q6", topic: "Schemes", question: "Ayushman Bharat — PM-JAY provides a health cover of what amount per family per year?",
-    options: ["₹1 lakh", "₹2 lakh", "₹5 lakh", "₹10 lakh"], answer: 2,
-    explanation: "PM-JAY provides ₹5 lakh per family per year on a family floater basis, with no cap on family size or age.",
-    trap: "The 'family floater, no cap on size/age' feature is a common statement-based trap distinct from the amount itself.",
-    difficulty: "Easy",
+    id: "q16", topic: "International Organisations", question: "As of 2026, which of the following became a full BRICS member effective January 2025 (after the initial January 2024 expansion cohort)?",
+    options: ["Argentina", "Indonesia", "Turkey", "Nigeria"], answer: 1,
+    explanation: "Indonesia formally became a full BRICS member from January 2025, a year after the initial 2024 expansion cohort (Egypt, Ethiopia, Iran, Saudi Arabia, UAE). Argentina was invited but withdrew before accession under its new government; Nigeria and Turkey are partner countries, not full members.",
+    trap: "Argentina is commonly misremembered as a member because it was part of the original 2023 Johannesburg invitation list — but it withdrew before the January 2024 accession date.",
+    difficulty: "Hard",
   },
+  {
+    id: "q17", topic: "International Organisations", question: "India is hosting which major multilateral summit in New Delhi in September 2026?",
+    options: ["G20 Summit", "18th BRICS Summit", "SCO Summit", "ASEAN-India Summit"], answer: 1,
+    explanation: "India holds the BRICS presidency in 2026 and is hosting the 18th BRICS Summit in New Delhi on 12–13 September 2026. India's G20 presidency was earlier, in 2023.",
+    trap: "Candidates may default to 'G20' as their reflexive answer for any India-hosted 2020s summit, forgetting India's G20 turn was already in 2023 — 2026 is a BRICS year for India.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q18", topic: "International Organisations", question: "Which country holds the G20 presidency in 2026?",
+    options: ["India", "Brazil", "South Africa", "United States"], answer: 3,
+    explanation: "The G20 presidency sequence after India (2023) is: Brazil (2024) → South Africa (2025) → United States (2026) → United Kingdom (2027).",
+    trap: "This is a fast-moving fact that changes annually — always verify the current year's G20 host rather than relying on memory of India's own 2023 presidency.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q19", topic: "International Organisations", question: "Consider the following statements about the UN Security Council (UNSC):\n1. It has 5 permanent members, each holding veto power.\n2. Non-permanent members serve 3-year terms.\n3. Reform requires ratification by all 5 permanent members.\nWhich of the statements given above is/are correct?",
+    options: ["1 and 3 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"], answer: 0,
+    explanation: "Statements 1 and 3 are correct. Statement 2 is wrong — UNSC non-permanent members serve 2-year terms, not 3.",
+    trap: "The 2-year non-permanent term is frequently confused with the UN Human Rights Council's 3-year term — a cross-body mix-up.",
+    difficulty: "Hard",
+  },
+  {
+    id: "q20", topic: "International Organisations", question: "The WHO Global Centre for Traditional Medicine — WHO's first and only such global knowledge centre — is located in:",
+    options: ["Geneva, Switzerland", "New Delhi, India", "Jamnagar, Gujarat, India", "Kerala, India"], answer: 2,
+    explanation: "The WHO Global Centre for Traditional Medicine was established in Jamnagar, Gujarat, in 2022 — the WHO's first and only global centre dedicated to traditional medicine.",
+    trap: "Candidates often guess New Delhi by default for any India-hosted WHO facility, without recalling the specific Jamnagar location.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q21", topic: "International Organisations", question: "The India-Middle East-Europe Economic Corridor (IMEC) was announced at which forum?",
+    options: ["G7 Summit, 2023", "G20 New Delhi Summit, 2023", "QUAD Summit, 2023", "SCO Summit, 2023"], answer: 1,
+    explanation: "IMEC was announced on the sidelines of the G20 New Delhi Summit in September 2023, involving India, the US, Saudi Arabia, UAE, EU and other partners.",
+    trap: "Given IMEC's geopolitical framing (seen as a counter to China's BRI), candidates sometimes wrongly associate it with QUAD or G7, which did not host its announcement.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q22", topic: "International Organisations", question: "Which grouping brings together India, Israel, the UAE and the United States for economic and technology cooperation?",
+    options: ["I2U2", "QUAD", "IORA", "Abraham Accords"], answer: 0,
+    explanation: "I2U2 (India, Israel, UAE, US) is a minilateral grouping focused on joint investment in areas like food security, clean energy and technology.",
+    trap: "The Abraham Accords are a separate set of Israel-Arab normalisation agreements that India is not a party to — easily confused with I2U2 given the overlapping Gulf/Israel geography.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q23", topic: "International Organisations", question: "The Indian Ocean Rim Association (IORA) Secretariat is located in:",
+    options: ["Mumbai, India", "Colombo, Sri Lanka", "Ebène, Mauritius", "Perth, Australia"], answer: 2,
+    explanation: "IORA's Secretariat is located in Ebène, Mauritius. IORA was established in 1997 and has 23 member states across the Indian Ocean rim.",
+    trap: "Given India's central role in the Indian Ocean, candidates sometimes wrongly assume the secretariat must be in an Indian city.",
+    difficulty: "Medium",
+  },
+
+  // ---------- Bilateral Relations ----------
   {
     id: "q7", topic: "Bilateral Relations", question: "The 'foundational' defence agreements enabling India-US military interoperability include LEMOA, COMCASA and:",
     options: ["BECA", "iCET", "2+2 Dialogue", "I2U2"], answer: 0,
@@ -56,5 +186,40 @@ export const MCQS: MCQ[] = [
     explanation: "The India-Nepal Treaty of Peace and Friendship (1950) underlies the open border and reciprocal rights of movement/residence.",
     trap: "Panchsheel (1954) is an India-China agreement, not India-Nepal — a common cross-country confusion.",
     difficulty: "Medium",
+  },
+  {
+    id: "q24", topic: "Bilateral Relations", question: "The India-UK Comprehensive Economic and Trade Agreement (CETA) came into force on:",
+    options: ["24 July 2025", "1 January 2026", "15 July 2026", "6 May 2025"], answer: 2,
+    explanation: "CETA was signed on 24 July 2025 at Chequers but came into force later, on 15 July 2026, after parliamentary processes in both countries.",
+    trap: "The signing date (24 July 2025) is often wrongly given as the 'in force' date — UPSC-style questions frequently test this signing-vs-entry-into-force distinction for trade agreements.",
+    difficulty: "Hard",
+  },
+  {
+    id: "q25", topic: "Bilateral Relations", question: "The MAHASAGAR vision, announced by India's PM in March 2025, was unveiled during a visit to which country?",
+    options: ["Sri Lanka", "Mauritius", "Maldives", "Seychelles"], answer: 1,
+    explanation: "MAHASAGAR (Mutual and Holistic Advancement for Security and Growth Across Regions) was announced during PM Modi's visit to Mauritius in March 2025, elevating the 2015 SAGAR doctrine.",
+    trap: "Given MAHASAGAR's IOR-island-state framing, candidates often guess Maldives or Seychelles instead of the actual announcement location, Mauritius.",
+    difficulty: "Hard",
+  },
+  {
+    id: "q26", topic: "Bilateral Relations", question: "The India-UAE Comprehensive Economic Partnership Agreement (CEPA) came into force in which year?",
+    options: ["2020", "2021", "2022", "2023"], answer: 2,
+    explanation: "The India-UAE CEPA came into force in May 2022, marking India's first major trade agreement under its renewed post-2019 FTA push.",
+    trap: "This is sometimes confused with the year negotiations began or were announced, rather than the actual entry-into-force date.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q27", topic: "Bilateral Relations", question: "Which country is described as India's most consistent Western defence-technology-transfer partner, notably for the Scorpène-class submarine programme?",
+    options: ["United States", "United Kingdom", "France", "Israel"], answer: 2,
+    explanation: "France has supplied technology for the Scorpène-class submarines (Project-75) and Rafale fighter jets, and is widely regarded as India's most consistent Western partner on sensitive technology transfer.",
+    trap: "The US is often the default guess for any advanced defence-technology question given the scale of the India-US relationship, but France's track record on technology-sharing specifically is distinct and older.",
+    difficulty: "Medium",
+  },
+  {
+    id: "q28", topic: "Bilateral Relations", question: "The Colombo Security Conclave is a maritime security grouping comprising India, Sri Lanka, Maldives, and (as observer/associate) which other states?",
+    options: ["Bangladesh and Seychelles", "Mauritius and Myanmar", "Thailand and Indonesia", "Pakistan and Iran"], answer: 0,
+    explanation: "The Colombo Security Conclave includes India, Sri Lanka and the Maldives as core members, with Mauritius, Bangladesh and Seychelles participating as observers/associate members in various configurations.",
+    trap: "Candidates sometimes confuse this Indian-Ocean-specific grouping with the broader IORA, which has a much larger 23-member roster.",
+    difficulty: "Hard",
   },
 ];

@@ -4,6 +4,7 @@ import { Trash2, Download } from "lucide-react";
 import { SCHEMES } from "../data/schemes";
 import { COUNTRIES } from "../data/countries";
 import { ORGANISATIONS } from "../data/organisations";
+import { DOCTRINES } from "../data/doctrines";
 import { SectionLabel } from "../components/ui";
 import { exportAllData } from "../lib/storage";
 import type { Bookmarks, NoteMap } from "../lib/hooks";
@@ -70,6 +71,16 @@ export default function Saved({
           const o = ORGANISATIONS.find((x) => x.id === id);
           if (!o) return null;
           return <SavedRow key={id} title={o.name} onOpen={() => navigate(`/ir/org/${id}`)} onRemove={() => toggleBookmark("orgs", id)} />;
+        })}
+      </div>
+
+      <SectionLabel>Bookmarked doctrines ({bookmarks.doctrines.length})</SectionLabel>
+      <div className="space-y-1.5 mb-6">
+        {bookmarks.doctrines.length === 0 && <p className="text-[12.5px] text-[#8a7c58]">None yet.</p>}
+        {bookmarks.doctrines.map((id) => {
+          const d = DOCTRINES.find((x) => x.id === id);
+          if (!d) return null;
+          return <SavedRow key={id} title={d.name} onOpen={() => navigate(`/doctrines/${id}`)} onRemove={() => toggleBookmark("doctrines", id)} />;
         })}
       </div>
 

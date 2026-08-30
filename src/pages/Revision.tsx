@@ -3,6 +3,7 @@ import { Check, ChevronLeft, Shuffle } from "lucide-react";
 import { SCHEMES } from "../data/schemes";
 import { COUNTRIES } from "../data/countries";
 import { ORGANISATIONS } from "../data/organisations";
+import { DOCTRINES } from "../data/doctrines";
 import type { Progress } from "../lib/hooks";
 
 interface Card {
@@ -28,7 +29,12 @@ export default function Revision({ markRevisionSeen, progress }: { markRevisionS
       front: o.name,
       back: `Est. ${o.established} · HQ: ${o.headquarters}\nMembers: ${o.members.join(", ")}`,
     }));
-    return [...schemeCards, ...countryCards, ...orgCards];
+    const doctrineCards = DOCTRINES.map((d) => ({
+      key: `doctrine:${d.id}`,
+      front: d.name,
+      back: `${d.period}\n\n${d.prelims.join("\n\n")}`,
+    }));
+    return [...schemeCards, ...countryCards, ...orgCards, ...doctrineCards];
   }, []);
 
   const [order, setOrder] = useState<number[]>(() => deck.map((_, i) => i));

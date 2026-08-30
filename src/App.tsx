@@ -2,17 +2,19 @@ import React, { useMemo, useState } from "react";
 import { Routes, Route, useNavigate, useLocation, Link } from "react-router-dom";
 import {
   LayoutDashboard, ScrollText, Globe2, ListChecks, PenLine, RotateCcw,
-  Bookmark, Search, X, Menu,
+  Bookmark, Search, X, Menu, Compass,
 } from "lucide-react";
 import { useBookmarks, useNotes, useProgress } from "./lib/hooks";
 import { SCHEMES } from "./data/schemes";
 import { COUNTRIES } from "./data/countries";
 import { ORGANISATIONS } from "./data/organisations";
+import { DOCTRINES } from "./data/doctrines";
 import { MiniCard, SectionLabel } from "./components/ui";
 
 import Dashboard from "./pages/Dashboard";
 import { SchemesList, SchemeDetail } from "./pages/Schemes";
 import { IRHome, CountryDetail, OrgDetail } from "./pages/IR";
+import { DoctrinesList, DoctrineDetail } from "./pages/Doctrines";
 import PrelimsLab from "./pages/Prelims";
 import MainsLab from "./pages/Mains";
 import Revision from "./pages/Revision";
@@ -22,6 +24,7 @@ const NAV_ITEMS = [
   { path: "/", label: "Dashboard", icon: LayoutDashboard },
   { path: "/schemes", label: "Schemes", icon: ScrollText },
   { path: "/ir", label: "Int'l Relations", icon: Globe2 },
+  { path: "/doctrines", label: "Doctrines", icon: Compass },
   { path: "/prelims", label: "Prelims Lab", icon: ListChecks },
   { path: "/mains", label: "Mains Lab", icon: PenLine },
   { path: "/revision", label: "Revision", icon: RotateCcw },
@@ -45,6 +48,7 @@ export default function App() {
       s: SCHEMES.filter((x) => x.name.toLowerCase().includes(q) || x.sector.toLowerCase().includes(q) || x.ministry.toLowerCase().includes(q)),
       c: COUNTRIES.filter((x) => x.name.toLowerCase().includes(q) || x.region.toLowerCase().includes(q)),
       o: ORGANISATIONS.filter((x) => x.name.toLowerCase().includes(q)),
+      d: DOCTRINES.filter((x) => x.name.toLowerCase().includes(q) || x.summary.toLowerCase().includes(q)),
     };
   }, [query]);
 
@@ -125,6 +129,8 @@ export default function App() {
               <Route path="/ir" element={<IRHome bookmarks={bookmarks} toggleBookmark={toggleBookmark} />} />
               <Route path="/ir/country/:id" element={<CountryDetail bookmarks={bookmarks} toggleBookmark={toggleBookmark} notes={notes} saveNote={saveNote} />} />
               <Route path="/ir/org/:id" element={<OrgDetail bookmarks={bookmarks} toggleBookmark={toggleBookmark} notes={notes} saveNote={saveNote} />} />
+              <Route path="/doctrines" element={<DoctrinesList bookmarks={bookmarks} toggleBookmark={toggleBookmark} />} />
+              <Route path="/doctrines/:id" element={<DoctrineDetail bookmarks={bookmarks} toggleBookmark={toggleBookmark} notes={notes} saveNote={saveNote} />} />
               <Route path="/prelims" element={<PrelimsLab recordQuizAttempt={recordQuizAttempt} progress={progress} />} />
               <Route path="/mains" element={<MainsLab recordMainsAttempt={recordMainsAttempt} />} />
               <Route path="/revision" element={<Revision markRevisionSeen={markRevisionSeen} progress={progress} />} />
@@ -142,12 +148,12 @@ function SearchResults({
   query,
   onGo,
 }: {
-  results: { s: typeof SCHEMES; c: typeof COUNTRIES; o: typeof ORGANISATIONS };
+  results: { s: typeof SCHEMES; c: typeof COUNTRIES; o: typeof ORGANISATIONS; d: typeof DOCTRINES };
   query: string;
   onGo: (path: string) => void;
 }) {
-  const { s, c, o } = results;
-  const total = s.length + c.length + o.length;
+  const { s, c, o, d } = results;
+  const total = s.length + c.length + o.length + d.length;
   return (
     <div>
       <h2 className="font-serif text-xl mb-1">Search results for "{query}"</h2>
@@ -181,6 +187,16 @@ function SearchResults({
           <div className="grid sm:grid-cols-2 gap-3">
             {o.map((x) => (
               <MiniCard key={x.id} title={x.name} sub={x.purpose.slice(0, 60) + "..."} onClick={() => onGo(`/ir/org/${x.id}`)} />
+            ))}
+          </div>
+        </div>
+      )}
+      {d.length > 0 && (
+        <div className="mb-6">
+          <SectionLabel>Doctrines</SectionLabel>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {d.map((x) => (
+              <MiniCard key={x.id} title={x.name} sub={x.period} onClick={() => onGo(`/doctrines/${x.id}`)} />
             ))}
           </div>
         </div>

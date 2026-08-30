@@ -81,10 +81,10 @@ src/
 
 ## Extending the content
 
-This ships with a deliberately small, hand-verified starter dataset (6
-schemes, 6 countries, 7 organisations, 8 MCQs, 4 Mains questions) rather
-than thousands of auto-generated records, so that everything in it is
-something you can trust. To add more:
+This ships with a hand-verified starter dataset (16 schemes, 14 countries,
+16 organisations, 8 foreign-policy doctrines, 28 MCQs, 11 Mains questions),
+web-verified as of August 2026, rather than thousands of auto-generated
+records. To add more:
 
 1. **Add a scheme** — append an object to `src/data/schemes.ts` matching
    the `Scheme` interface in `src/data/types.ts`. Add the source you used
@@ -93,9 +93,12 @@ something you can trust. To add more:
 3. **Add an organisation** — same pattern in `src/data/organisations.ts`.
    Set `membershipUncertain: true` if membership has changed recently, to
    surface the verification banner on that page.
-4. **Add an MCQ** — append to `src/data/mcqs.ts`. `answer` is the
+4. **Add a doctrine** — foreign-policy concepts/vision documents (Panchsheel,
+   Neighbourhood First, MAHASAGAR, etc.) go in `src/data/doctrines.ts`
+   matching the `Doctrine` interface.
+5. **Add an MCQ** — append to `src/data/mcqs.ts`. `answer` is the
    zero-based index into `options`.
-5. **Add a Mains question** — append to `src/data/mains.ts`. `keywords`
+6. **Add a Mains question** — append to `src/data/mains.ts`. `keywords`
    drives the rule-based content-coverage score in the Mains Lab.
 
 There is no build step or CMS — TypeScript will flag any missing field
@@ -113,8 +116,14 @@ whenever you refresh the dataset.
 ## What this is / isn't
 
 This is a functional MVP: schemes database, country/organisation
-profiles, prelims practice, mains practice, revision, bookmarks, notes,
-search, comparison — all working, all deployable as-is. It is **not** a
-pre-populated encyclopedia of every scheme and every country; the data
-model is built so you (or contributors) can grow it incrementally
-without touching any app code.
+profiles, foreign-policy doctrines, prelims practice, mains practice,
+revision, bookmarks, notes, search, comparison — all working, all
+deployable as-is. It is **not** a pre-populated encyclopedia of every
+scheme and every country; the data model is built so you (or
+contributors) can grow it incrementally without touching any app code.
+
+Content was web-verified as of August 2026. Fast-moving facts — BRICS/G20
+rosters, trade-agreement entry-into-force dates, recent bilateral visits —
+are the most likely to go stale first; each has a `sourceKey` linking to
+the relevant official page, and organisations with unsettled membership
+are flagged with `membershipUncertain: true`.
