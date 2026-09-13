@@ -1,12 +1,13 @@
 # UPSC Knowledge Hub — Schemes & International Relations
 
-A static, front-end-only React + TypeScript app for UPSC prep: government
-schemes, India's bilateral/multilateral relations, a Prelims MCQ lab, a
-Mains answer-writing lab with rule-based feedback, spaced-repetition-style
-revision flashcards, and local bookmarks/notes. No backend, no API keys,
-no database — everything runs and persists (via the browser's
-`localStorage`) entirely client-side, so it deploys as static files on
-GitHub Pages.
+A static, front-end-only React + TypeScript app for UPSC/UPPSC prep:
+government schemes, India's bilateral/multilateral relations, foreign-policy
+doctrines, a dated Current Affairs module bridging news to the static
+syllabus, a Prelims MCQ lab, a Mains answer-writing lab with rule-based
+feedback, spaced-repetition-style revision flashcards, and local
+bookmarks/notes. No backend, no API keys, no database — everything runs
+and persists (via the browser's `localStorage`) entirely client-side, so
+it deploys as static files on GitHub Pages.
 
 ## Quick start (local development)
 
@@ -62,11 +63,13 @@ folder is 100% static HTML/CSS/JS.)
 ```
 src/
   data/            # all content lives here as typed TS arrays
-    types.ts       # shared interfaces (Scheme, Country, Organisation, MCQ, MainsQuestion)
+    types.ts       # shared interfaces (Scheme, Country, Organisation, Doctrine, CurrentAffair, MCQ, MainsQuestion)
     sources.ts     # official-source registry + "last verified" string
     schemes.ts
     countries.ts
     organisations.ts
+    doctrines.ts
+    currentAffairs.ts
     mcqs.ts
     mains.ts
   lib/
@@ -81,10 +84,20 @@ src/
 
 ## Extending the content
 
-This ships with a hand-verified starter dataset (16 schemes, 14 countries,
-16 organisations, 8 foreign-policy doctrines, 28 MCQs, 11 Mains questions),
-web-verified as of August 2026, rather than thousands of auto-generated
-records. To add more:
+This ships with a hand-verified dataset — **25 schemes, 21 countries, 14
+international organisations, 8 foreign-policy doctrines, 10 dated Current
+Affairs entries, 33 MCQs and 13 Mains questions** — researched against
+official/primary sources as of September 2026, rather than thousands of
+auto-generated records. Coverage spans every UPSC/UPPSC-relevant scheme
+sector (agriculture, rural/urban development, health, education, women &
+child, social justice, tribal welfare, financial inclusion, MSME,
+infrastructure, energy, environment, science & tech, defence, skilling)
+and every IR layer (bilateral neighbourhood + major powers + extended
+neighbourhood, regional groupings, UN-system multilateral bodies, foreign
+policy doctrines, and 2025-26 current affairs — the India-US tariff
+dispute and its Feb 2026 resolution, the China reset via Tianjin, BRICS'
+2026 expansion to 11 members, the G20 handover to the US, Operation
+Sindoor, the stalled QUAD summit, and more). To add more:
 
 1. **Add a scheme** — append an object to `src/data/schemes.ts` matching
    the `Scheme` interface in `src/data/types.ts`. Add the source you used
@@ -96,9 +109,13 @@ records. To add more:
 4. **Add a doctrine** — foreign-policy concepts/vision documents (Panchsheel,
    Neighbourhood First, MAHASAGAR, etc.) go in `src/data/doctrines.ts`
    matching the `Doctrine` interface.
-5. **Add an MCQ** — append to `src/data/mcqs.ts`. `answer` is the
+5. **Add a Current Affairs entry** — dated developments that bridge to the
+   static syllabus go in `src/data/currentAffairs.ts` matching the
+   `CurrentAffair` interface (background / what changed / why India cares
+   / static links). This is the module to keep freshest — see below.
+6. **Add an MCQ** — append to `src/data/mcqs.ts`. `answer` is the
    zero-based index into `options`.
-6. **Add a Mains question** — append to `src/data/mains.ts`. `keywords`
+7. **Add a Mains question** — append to `src/data/mains.ts`. `keywords`
    drives the rule-based content-coverage score in the Mains Lab.
 
 There is no build step or CMS — TypeScript will flag any missing field
@@ -122,8 +139,13 @@ deployable as-is. It is **not** a pre-populated encyclopedia of every
 scheme and every country; the data model is built so you (or
 contributors) can grow it incrementally without touching any app code.
 
-Content was web-verified as of August 2026. Fast-moving facts — BRICS/G20
-rosters, trade-agreement entry-into-force dates, recent bilateral visits —
-are the most likely to go stale first; each has a `sourceKey` linking to
-the relevant official page, and organisations with unsettled membership
-are flagged with `membershipUncertain: true`.
+Content was web-researched as of September 2026. Fast-moving facts —
+BRICS/G20 rosters, trade-agreement entry-into-force dates, recent
+bilateral visits, QUAD/G20 summit hosting — are the most likely to go
+stale first; each has a `sourceKey` linking to the relevant official
+page, and organisations with unsettled membership are flagged with
+`membershipUncertain: true`. The Current Affairs module in particular is
+a living layer: revisit `src/data/currentAffairs.ts` every few months,
+retire entries that have been superseded (or turn them into a static
+"background" line inside a newer entry), and add new developments in the
+same shape.

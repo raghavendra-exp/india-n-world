@@ -2,19 +2,21 @@ import React, { useMemo, useState } from "react";
 import { Routes, Route, useNavigate, useLocation, Link } from "react-router-dom";
 import {
   LayoutDashboard, ScrollText, Globe2, ListChecks, PenLine, RotateCcw,
-  Bookmark, Search, X, Menu, Compass,
+  Bookmark, Search, X, Menu, Compass, Newspaper,
 } from "lucide-react";
 import { useBookmarks, useNotes, useProgress } from "./lib/hooks";
 import { SCHEMES } from "./data/schemes";
 import { COUNTRIES } from "./data/countries";
 import { ORGANISATIONS } from "./data/organisations";
 import { DOCTRINES } from "./data/doctrines";
+import { CURRENT_AFFAIRS } from "./data/currentAffairs";
 import { MiniCard, SectionLabel } from "./components/ui";
 
 import Dashboard from "./pages/Dashboard";
 import { SchemesList, SchemeDetail } from "./pages/Schemes";
 import { IRHome, CountryDetail, OrgDetail } from "./pages/IR";
 import { DoctrinesList, DoctrineDetail } from "./pages/Doctrines";
+import CurrentAffairs from "./pages/CurrentAffairs";
 import PrelimsLab from "./pages/Prelims";
 import MainsLab from "./pages/Mains";
 import Revision from "./pages/Revision";
@@ -22,6 +24,7 @@ import Saved from "./pages/Saved";
 
 const NAV_ITEMS = [
   { path: "/", label: "Dashboard", icon: LayoutDashboard },
+  { path: "/current-affairs", label: "Current Affairs", icon: Newspaper },
   { path: "/schemes", label: "Schemes", icon: ScrollText },
   { path: "/ir", label: "Int'l Relations", icon: Globe2 },
   { path: "/doctrines", label: "Doctrines", icon: Compass },
@@ -49,6 +52,7 @@ export default function App() {
       c: COUNTRIES.filter((x) => x.name.toLowerCase().includes(q) || x.region.toLowerCase().includes(q)),
       o: ORGANISATIONS.filter((x) => x.name.toLowerCase().includes(q)),
       d: DOCTRINES.filter((x) => x.name.toLowerCase().includes(q) || x.summary.toLowerCase().includes(q)),
+      ca: CURRENT_AFFAIRS.filter((x) => x.title.toLowerCase().includes(q) || x.category.toLowerCase().includes(q) || x.summary.toLowerCase().includes(q)),
     };
   }, [query]);
 
@@ -124,6 +128,7 @@ export default function App() {
           ) : (
             <Routes>
               <Route path="/" element={<Dashboard progress={progress} bookmarks={bookmarks} />} />
+              <Route path="/current-affairs" element={<CurrentAffairs />} />
               <Route path="/schemes" element={<SchemesList bookmarks={bookmarks} toggleBookmark={toggleBookmark} />} />
               <Route path="/schemes/:id" element={<SchemeDetail bookmarks={bookmarks} toggleBookmark={toggleBookmark} notes={notes} saveNote={saveNote} />} />
               <Route path="/ir" element={<IRHome bookmarks={bookmarks} toggleBookmark={toggleBookmark} />} />
@@ -148,12 +153,12 @@ function SearchResults({
   query,
   onGo,
 }: {
-  results: { s: typeof SCHEMES; c: typeof COUNTRIES; o: typeof ORGANISATIONS; d: typeof DOCTRINES };
+  results: { s: typeof SCHEMES; c: typeof COUNTRIES; o: typeof ORGANISATIONS; d: typeof DOCTRINES; ca: typeof CURRENT_AFFAIRS };
   query: string;
   onGo: (path: string) => void;
 }) {
-  const { s, c, o, d } = results;
-  const total = s.length + c.length + o.length + d.length;
+  const { s, c, o, d, ca } = results;
+  const total = s.length + c.length + o.length + d.length + ca.length;
   return (
     <div>
       <h2 className="font-serif text-xl mb-1">Search results for "{query}"</h2>
@@ -197,6 +202,16 @@ function SearchResults({
           <div className="grid sm:grid-cols-2 gap-3">
             {d.map((x) => (
               <MiniCard key={x.id} title={x.name} sub={x.period} onClick={() => onGo(`/doctrines/${x.id}`)} />
+            ))}
+          </div>
+        </div>
+      )}
+      {ca.length > 0 && (
+        <div className="mb-6">
+          <SectionLabel>Current Affairs</SectionLabel>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {ca.map((x) => (
+              <MiniCard key={x.id} title={x.title} sub={x.date} onClick={() => onGo(`/current-affairs`)} />
             ))}
           </div>
         </div>

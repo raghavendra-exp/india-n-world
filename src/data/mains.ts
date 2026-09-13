@@ -56,4 +56,14 @@ export const MAINS_QUESTIONS: MainsQuestion[] = [
     question: "India's engagement with BRICS reflects both an opportunity to reform global governance and a risk of being drawn into a China-dominated bloc narrative. Discuss.",
     keywords: ["BRICS expansion", "New Development Bank", "de-dollarisation", "Global South", "China-Russia tilt", "UNSC/IMF reform"],
   },
+  {
+    id: "m12", gsPaper: "GS-II", topic: "Bilateral Relations", directive: "Examine", wordLimit: 250, time: 20,
+    question: "Examine the legal and strategic significance of India's decision to hold the Indus Waters Treaty 'in abeyance', and its refusal to accept the jurisdiction of the Court of Arbitration's 2026 ruling.",
+    keywords: ["Indus Waters Treaty", "abeyance", "Court of Arbitration", "Pahalgam attack", "transboundary rivers", "sovereign decision", "international arbitration"],
+  },
+  {
+    id: "m13", gsPaper: "GS-II", topic: "International Relations", directive: "Discuss", wordLimit: 250, time: 20,
+    question: "Discuss the significance of the India-EU Free Trade Agreement for India's strategy of trade diversification, and the challenges that remain before it enters into force.",
+    keywords: ["India-EU FTA", "BTIA", "trade diversification", "ratification", "tariff lines", "labour-intensive exports"],
+  },
 ];

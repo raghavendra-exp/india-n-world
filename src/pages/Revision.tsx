@@ -4,6 +4,7 @@ import { SCHEMES } from "../data/schemes";
 import { COUNTRIES } from "../data/countries";
 import { ORGANISATIONS } from "../data/organisations";
 import { DOCTRINES } from "../data/doctrines";
+import { CURRENT_AFFAIRS } from "../data/currentAffairs";
 import type { Progress } from "../lib/hooks";
 
 interface Card {
@@ -34,7 +35,12 @@ export default function Revision({ markRevisionSeen, progress }: { markRevisionS
       front: d.name,
       back: `${d.period}\n\n${d.prelims.join("\n\n")}`,
     }));
-    return [...schemeCards, ...countryCards, ...orgCards, ...doctrineCards];
+    const currentAffairsCards = CURRENT_AFFAIRS.map((ca) => ({
+      key: `ca:${ca.id}`,
+      front: ca.title,
+      back: `${ca.date}\n\n${ca.prelims.join("\n\n")}`,
+    }));
+    return [...schemeCards, ...countryCards, ...orgCards, ...doctrineCards, ...currentAffairsCards];
   }, []);
 
   const [order, setOrder] = useState<number[]>(() => deck.map((_, i) => i));

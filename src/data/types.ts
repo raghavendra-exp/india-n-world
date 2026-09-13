@@ -101,3 +101,18 @@ export interface Doctrine {
   mains: string;
   sourceKey: string;
 }
+
+export interface CurrentAffair {
+  id: string;
+  date: string;
+  title: string;
+  category: string;
+  summary: string;
+  background: string;
+  whatChanged: string;
+  indiaInterest: string;
+  prelims: string[];
+  mains: string;
+  staticLinks: string[];
+  sourceKey: string;
+}
