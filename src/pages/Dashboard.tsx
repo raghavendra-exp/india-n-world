@@ -46,11 +46,12 @@ export default function Dashboard({ progress, bookmarks }: { progress: Progress;
         <div className="lg:col-span-2 bg-white border border-[#e0d6bd] rounded-xl p-5">
           <SectionLabel>Quick start</SectionLabel>
           <div className="grid sm:grid-cols-2 gap-3 mt-2">
-            <QuickAction icon={ScrollText} title="Browse schemes" desc="Filter by sector, ministry, funding, DBT" to="/schemes" />
-            <QuickAction icon={Globe2} title="Country profile" desc="Bilateral relations, prelims + mains facts" to="/ir" />
-            <QuickAction icon={Compass} title="Foreign policy doctrines" desc="Panchsheel to MAHASAGAR, with current relevance" to="/doctrines" />
-            <QuickAction icon={ListChecks} title="Prelims Lab" desc="Statement-based MCQs with trap analysis" to="/prelims" />
-            <QuickAction icon={PenLine} title="Mains Lab" desc="Timed answer writing with structure scoring" to="/mains" />
+            <QuickAction icon={Compass} title="Strategic Map Lab" desc="Interactive overseas ports, chokepoints & corridors" to="/map" />
+            <QuickAction icon={Globe2} title="Bilateral profiles (30)" desc="Neighbourhood, major powers & extended ties" to="/ir" />
+            <QuickAction icon={ScrollText} title="Browse schemes (30)" desc="Filter by sector, ministry, funding, DBT" to="/schemes" />
+            <QuickAction icon={ListChecks} title="Prelims Lab (48 MCQs)" desc="Statement-based MCQs with trap analysis" to="/prelims" />
+            <QuickAction icon={PenLine} title="Mains Lab (18 Qs)" desc="Timed answer writing with structure scoring" to="/mains" />
+            <QuickAction icon={ChevronRight} title="Foreign policy doctrines" desc="Panchsheel to Gujral & Vishwa Mitra" to="/doctrines" />
           </div>
         </div>
         <div className="bg-white border border-[#e0d6bd] rounded-xl p-5">
@@ -88,7 +89,7 @@ export default function Dashboard({ progress, bookmarks }: { progress: Progress;
       </div>
 
       <div className="mt-6">
-        <VerifyBanner text="This dataset covers 16 schemes, 14 countries, 16 organisations and 8 foreign-policy doctrines, web-verified as of August 2026. Extend src/data/*.ts following the existing shape as you study — see the README." />
+        <VerifyBanner text="Comprehensive UPSC Atlas: 30 bilateral partners, 22 international organisations, 20 strategic maritime nodes & corridors, 12 foreign-policy doctrines, 30 flagship national schemes, 48 Prelims MCQs, and 18 Mains questions — web-verified as of September 2026." />
       </div>
     </div>
   );

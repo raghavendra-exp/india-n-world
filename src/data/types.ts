@@ -116,3 +116,19 @@ export interface CurrentAffair {
   staticLinks: string[];
   sourceKey: string;
 }
+
+export interface MapNode {
+  id: string;
+  name: string;
+  category: "port" | "chokepoint" | "corridor";
+  region: string;
+  countryOrBody: string;
+  coords: { x: number; y: number }; // SVG coordinates for viewBox 0 0 1000 560
+  latLon: { lat: number; lon: number };
+  strategicSignificance: string;
+  indiaRelevance: string;
+  latestStatus: string;
+  prelimsFacts: string[];
+  linkId?: string; // e.g. "iran", "oman", "indonesia"
+  sourceKey: string;
+}

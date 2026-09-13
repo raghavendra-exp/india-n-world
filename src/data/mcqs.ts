@@ -257,4 +257,229 @@ export const MCQS: MCQ[] = [
     trap: "50% was the pre-framework peak rate, and 25% was one of its two components (the reciprocal portion alone) — the question asks for the post-framework figure specifically.",
     difficulty: "Medium",
   },
+  {
+    id: "q34",
+    topic: "Chabahar Port & Geopolitics",
+    difficulty: "Medium",
+    question: "With reference to the Chabahar Port, consider the following statements:\n1. It is located on the Makran coast in the Sistan-Baluchestan province of Iran outside the Persian Gulf.\n2. India operates the Shahid Kalantari terminal under a 10-year bilateral contract signed in May 2024.\n3. The port connects directly with the International North-South Transport Corridor (INSTC).\nWhich of the statements given above is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    answer: 1,
+    explanation: "Statement 1 is correct: Chabahar is located on Iran's Makran coast outside the Strait of Hormuz, giving it direct deep-water access to the Arabian Sea. Statement 2 is incorrect: India operates the Shahid Beheshti terminal (not Shahid Kalantari) through India Ports Global Limited (IPGL). Statement 3 is correct: Chabahar serves as an official gateway terminal connecting with the INSTC transit network.",
+    trap: "Candidates often confuse the two terminals of Chabahar Port: Shahid Beheshti (developed and operated by India) and Shahid Kalantari."
+  },
+  {
+    id: "q35",
+    topic: "Maritime Chokepoints",
+    difficulty: "Hard",
+    question: "Consider the following pairs of strategic maritime channels and the water bodies they connect:\n1. Strait of Hormuz : Persian Gulf and Gulf of Oman\n2. Bab-el-Mandeb : Red Sea and Gulf of Aden\n3. Six Degree Channel : Andaman Sea and Bay of Bengal\n4. Lombok Strait : Java Sea and Indian Ocean\nHow many of the above pairs are correctly matched?",
+    options: [
+      "Only one pair",
+      "Only two pairs",
+      "Only three pairs",
+      "All four pairs"
+    ],
+    answer: 2,
+    explanation: "Pair 1 is correctly matched: Hormuz connects the Persian Gulf to the Gulf of Oman. Pair 2 is correctly matched: Bab-el-Mandeb links the Red Sea to the Gulf of Aden. Pair 3 is incorrectly matched: The Six Degree Channel (Great Channel) lies between India's Great Nicobar Island and Indonesia's Rondo Island, connecting the Bay of Bengal / Indian Ocean to the Andaman Sea / Malacca gateway. Pair 4 is correctly matched: The Lombok Strait connects the Java Sea (Pacific) with the Indian Ocean.",
+    trap: "UPSC frequently tests the exact geographic bounds of regional passages and archipelagic straits."
+  },
+  {
+    id: "q36",
+    topic: "Agalega & SAGAR",
+    difficulty: "Medium",
+    question: "In early 2024, an upgraded 3,000-metre airstrip and the St. James Jetty were jointly inaugurated by India in which of the following island nations to enhance maritime surveillance in the Western Indian Ocean?",
+    options: [
+      "Seychelles (Assumption Island)",
+      "Mauritius (Agalega Island)",
+      "Maldives (Uthuru Thila Falhu)",
+      "Madagascar (Nosy Be)"
+    ],
+    answer: 1,
+    explanation: "On February 29, 2024, Indian PM Narendra Modi and Mauritian PM Pravind Jugnauth jointly inaugurated the newly upgraded 3,000-metre airstrip and St. James Jetty on North Agalega Island in Mauritius, bolstering maritime domain awareness and anti-piracy operations under India's SAGAR vision.",
+    trap: "Do not confuse the Agalega Island project in Mauritius with the Assumption Island project in Seychelles."
+  },
+  {
+    id: "q37",
+    topic: "I2U2 Grouping",
+    difficulty: "Easy",
+    question: "The 'I2U2' minilateral initiative, often referred to as the 'West Asian Quad', focuses on joint investments across six mutually identified sectors. Which of the following is NOT one of these six focus areas?",
+    options: [
+      "Water and Energy",
+      "Transportation and Space",
+      "Health and Food Security",
+      "Nuclear Non-Proliferation and Border Fencing"
+    ],
+    answer: 3,
+    explanation: "The six focus sectors mutually agreed by the I2U2 leaders (India, Israel, UAE, USA) are: water, energy, transportation, space, health, and food security. Nuclear non-proliferation and border fencing are not part of the I2U2 mandate.",
+    trap: "Candidates may presume security or defense pacts form the formal focus, whereas I2U2 is strictly economic and infrastructure oriented."
+  },
+  {
+    id: "q38",
+    topic: "IMEC Corridor",
+    difficulty: "Medium",
+    question: "With reference to the India-Middle East-Europe Economic Corridor (IMEC), consider the following statements:\n1. It was officially launched on the sidelines of the G20 New Delhi Leaders' Summit in 2023.\n2. It comprises two distinct corridors: an Eastern Corridor connecting India to the Arabian Gulf, and a Northern Corridor connecting the Gulf to Europe.\n3. China and Iran are founding signatories to the memorandum of understanding.\nWhich of the statements given above are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    answer: 0,
+    explanation: "Statements 1 and 2 are correct: IMEC was launched on September 9, 2023 at the New Delhi G20 Summit with Eastern (maritime) and Northern (rail-maritime) corridors. Statement 3 is incorrect: China and Iran are not signatories; founding partners are India, US, UAE, Saudi Arabia, France, Germany, Italy, and the EU.",
+    trap: "Notice that IMEC is conceived in part to provide an open, rules-based alternative to China's BRI."
+  },
+  {
+    id: "q39",
+    topic: "INSTC Corridor",
+    difficulty: "Hard",
+    question: "Which of the following transport routes is considered the vital missing link on the Western route of the International North-South Transport Corridor (INSTC)?",
+    options: [
+      "Chabahar to Zahedan rail line",
+      "Rasht to Astara rail line",
+      "Bandar Abbas to Tehran high-speed link",
+      "Baku to Tbilisi highway"
+    ],
+    answer: 1,
+    explanation: "The 162-km Rasht-Astara railway section in northern Iran is the crucial missing rail connection on the Western arm of the INSTC. Once completed (backed by Russian financing), it will provide unbroken railway connectivity from the Persian Gulf via Iran and Azerbaijan into the Russian railway grid.",
+    trap: "Both Chabahar-Zahedan and Rasht-Astara are Iranian rail links, but Rasht-Astara connects Iran directly to Azerbaijan on the INSTC trunk route."
+  },
+  {
+    id: "q40",
+    topic: "Financial Action Task Force (FATF)",
+    difficulty: "Medium",
+    question: "With reference to the Financial Action Task Force (FATF), consider the following statements:\n1. It was established by the G7 Summit held in Paris in 1989.\n2. India has been a founding member of the FATF since 1989.\n3. In its 2024 Mutual Evaluation, India was placed in the highest 'regular follow-up' category.\nWhich of the statements given above is/are correct?",
+    options: [
+      "1 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    answer: 1,
+    explanation: "Statement 1 is correct: Established at the 1989 Paris G7 Summit. Statement 2 is incorrect: India joined FATF as an observer in 2006 and became a full member only in 2010 (not a founding member). Statement 3 is correct: In June 2024, FATF adopted India's Mutual Evaluation Report, categorising it under 'regular follow-up', a distinction shared by only 4 other G20 members.",
+    trap: "Check member joining dates: India is a founding member of UN, NAM, BRICS, and WTO, but NOT of FATF (joined 2010)."
+  },
+  {
+    id: "q41",
+    topic: "Foreign Policy Doctrines",
+    difficulty: "Easy",
+    question: "The principle of 'unilateral non-reciprocity' with immediate South Asian neighbours is the defining feature of which Indian foreign policy doctrine?",
+    options: [
+      "Nehruvian Panchsheel (1954)",
+      "Indira Doctrine (1971)",
+      "Gujral Doctrine (1996)",
+      "Look East Policy (1992)"
+    ],
+    answer: 2,
+    explanation: "The Gujral Doctrine, enunciated in 1996 by External Affairs Minister (later Prime Minister) I.K. Gujral, laid down five core principles, foremost among which was that with immediate neighbours like Bangladesh, Bhutan, Maldives, Nepal, and Sri Lanka, India must give what it can without asking for reciprocity.",
+    trap: "Panchsheel emphasizes mutual benefit and reciprocity, whereas the Gujral Doctrine explicitly mandates non-reciprocity."
+  },
+  {
+    id: "q42",
+    topic: "PM MITRA Scheme",
+    difficulty: "Medium",
+    question: "Under the PM Mega Integrated Textile Regions and Apparel (PM MITRA) scheme, the 5F vision represents which of the following sequences?",
+    options: [
+      "Fiber to Fabric to Factory to Fashion to Foreign",
+      "Farm to Fibre to Factory to Fashion to Foreign",
+      "Farm to Factory to Finance to Fashion to Foreign",
+      "Fibre to Factory to Fashion to Future to Foreign"
+    ],
+    answer: 1,
+    explanation: "The PM MITRA scheme is inspired by the 5F formula: Farm to Fibre to Factory to Fashion to Foreign, capturing the entire integrated textile supply chain.",
+    trap: "The sequence starts at the agricultural source ('Farm') before processing into 'Fibre'."
+  },
+  {
+    id: "q43",
+    topic: "National Green Hydrogen Mission",
+    difficulty: "Medium",
+    question: "Under India's National Green Hydrogen Mission, what is the officially notified emission threshold for hydrogen to be certified as 'Green Hydrogen'?",
+    options: [
+      "Not exceeding 1 kg CO2 equivalent per kg H2 produced",
+      "Not exceeding 2 kg CO2 equivalent per kg H2 produced",
+      "Zero absolute carbon emissions across all lifecycle stages",
+      "Not exceeding 4.5 kg CO2 equivalent per kg H2 produced"
+    ],
+    answer: 1,
+    explanation: "The Ministry of New and Renewable Energy (MNRE) notified that Green Hydrogen produced in India must have a well-to-gate carbon emission threshold not exceeding 2 kg CO2 equivalent per kg of H2 produced (taken as an average over a 12-month period).",
+    trap: "Absolute zero emissions is practically unattainable in the near term when accounting for supply-chain water treatment and electrical transmission."
+  },
+  {
+    id: "q44",
+    topic: "PM E-DRIVE Scheme",
+    difficulty: "Easy",
+    question: "In September 2024, the Union Cabinet approved the PM E-DRIVE scheme to accelerate electric vehicle adoption. Which landmark predecessor scheme did it replace?",
+    options: [
+      "FAME-II (Faster Adoption and Manufacturing of Electric Vehicles)",
+      "PM Kusum Scheme",
+      "National Clean Air Programme (NCAP)",
+      "SATAT Scheme"
+    ],
+    answer: 0,
+    explanation: "The PM E-DRIVE (PM Electric Drive Revolution in Innovative Vehicle Enhancement) scheme with a ₹10,900 Crore budget replaced the legacy FAME-II framework in September 2024.",
+    trap: "EMPS was merely a short-term 4-month transition scheme; FAME-II was the flagship predecessor."
+  },
+  {
+    id: "q45",
+    topic: "Mission Mausam",
+    difficulty: "Medium",
+    question: "Consider the following statements regarding 'Mission Mausam' approved by the Union Cabinet in September 2024:\n1. It is implemented under the aegis of the Ministry of Earth Sciences.\n2. It includes experimental exploration of cloud seeding and precipitation enhancement technologies.\n3. It aims to improve numerical weather prediction forecasts down to the panchayat/village scale.\nWhich of the statements given above are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    answer: 3,
+    explanation: "All three statements are correct: Mission Mausam (₹2,000 Crore outlay) is under the Ministry of Earth Sciences, executed by IMD, IITM Pune, and NCMRWF Noida, featuring Doppler radar expansion, village-level micro-forecasts, and cloud simulation chambers for rainfall enhancement research.",
+    trap: "Many aspirants assume weather modification is science fiction, but Mission Mausam explicitly includes experimental cloud-seeding microphysics research."
+  },
+  {
+    id: "q46",
+    topic: "Anusandhan National Research Foundation (ANRF)",
+    difficulty: "Hard",
+    question: "With reference to the Anusandhan National Research Foundation (ANRF), consider the following statements:\n1. The Prime Minister of India acts as the ex-officio President of its Governing Board.\n2. The ANRF Act, 2023 repealed and subsumed the Science and Engineering Research Board (SERB).\n3. Over 70% of its planned five-year ₹50,000 Crore outlay is targeted to be mobilised from non-governmental and private sector sources.\nWhich of the statements given above are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    answer: 3,
+    explanation: "All three statements are correct. The ANRF Act (2023) established the ANRF with the Prime Minister as President of the Governing Board, repealed the SERB Act (2008), and targets raising ₹36,000 Crore (~72%) from private and philanthropic donors out of its ₹50,000 Crore 5-year budget.",
+    trap: "It is unusual for Indian government research bodies to count on a 70% private sector contribution, which is precisely why UPSC focuses on ANRF's unique funding architecture."
+  },
+  {
+    id: "q47",
+    topic: "Bilateral Naval Exercises",
+    difficulty: "Medium",
+    question: "Consider the following pairs of bilateral military exercises and partner countries:\n1. SIMBEX : Singapore\n2. Samudra Shakti : Indonesia\n3. Naseem Al Bahr : Oman\n4. Cyclone : Egypt\nHow many of the above pairs are correctly matched?",
+    options: [
+      "Only one pair",
+      "Only two pairs",
+      "Only three pairs",
+      "All four pairs"
+    ],
+    answer: 3,
+    explanation: "All four pairs are correctly matched: SIMBEX is the naval drill with Singapore; Samudra Shakti is with Indonesia; Naseem Al Bahr is the naval exercise with Oman; and Cyclone is the joint special forces drill launched with Egypt in 2023.",
+    trap: "Exercise names are high-frequency Prelims questions. Ensure you don't confuse Naseem Al Bahr (Oman) with Al Mohed Al Hindi (Saudi Arabia) or Zayed Talwar (UAE)."
+  },
+  {
+    id: "q48",
+    topic: "Global Multilateralism",
+    difficulty: "Easy",
+    question: "During India's G20 Presidency at the New Delhi Summit in September 2023, which regional organisation was formally admitted as a permanent full member of the G20?",
+    options: [
+      "Association of Southeast Asian Nations (ASEAN)",
+      "African Union (AU)",
+      "Gulf Cooperation Council (GCC)",
+      "Community of Latin American and Caribbean States (CELAC)"
+    ],
+    answer: 1,
+    explanation: "The 55-nation African Union (AU) was admitted as a permanent member of the G20 at the New Delhi Summit in September 2023, championed by India as a historic milestone for Global South representation.",
+    trap: "The European Union was previously the only regional bloc in the G20; the African Union is the second."
+  }
 ];

@@ -38,6 +38,11 @@ export const SOURCES: Record<string, Source> = {
   asean: { name: "ASEAN Secretariat", url: "https://asean.org" },
   g20: { name: "G20 official portal", url: "https://g20.org" },
   pmo: { name: "Prime Minister's Office, India", url: "https://www.pmindia.gov.in" },
+  fatf: { name: "Financial Action Task Force (FATF)", url: "https://www.fatf-gafi.org" },
+  iaea: { name: "International Atomic Energy Agency (IAEA)", url: "https://www.iaea.org" },
+  mot: { name: "Ministry of Textiles", url: "https://texmin.nic.in" },
+  moes: { name: "Ministry of Earth Sciences", url: "https://moes.gov.in" },
+  heavyindustries: { name: "Ministry of Heavy Industries", url: "https://heavyindustries.gov.in" },
 };
 
 // Update this whenever you refresh the dataset — shown across the app

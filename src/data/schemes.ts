@@ -552,4 +552,184 @@ export const SCHEMES: Scheme[] = [
     keywords: ["Special Purpose Vehicle", "area-based development", "Integrated Command Centre"],
     sourceKey: "moha", prelimsRelevance: 4, mainsRelevance: 4,
   },
+  {
+    id: "pm-mitra",
+    name: "PM Mega Integrated Textile Regions and Apparel (PM MITRA)",
+    ministry: "Ministry of Textiles",
+    launchYear: 2021,
+    type: "Central Sector Scheme",
+    sector: "Textiles & Manufacturing",
+    target: "Domestic and global textile manufacturers, MSME spinning and weaving clusters, garment exporters.",
+    benefit: "World-class plug-and-play industrial infrastructure, common effluent treatment plants (CETP), incubation facilities, and Development Capital Support up to ₹500 Cr per park.",
+    funding: "Central Sector Scheme (Total outlay ₹4,445 Crore for 7 mega parks).",
+    dbt: false,
+    objective:
+      "To build world-class integrated modern industrial infrastructure for the entire textile value chain from 'Farm to Fibre to Factory to Fashion to Foreign' (5F Vision), attracting massive global FDI and creating ~21 lakh direct and indirect jobs.",
+    implementation:
+      "Implemented via Special Purpose Vehicles (SPVs) owned jointly by the Central Government and State Governments under a Public-Private Partnership (PPP) model across 7 states: Tamil Nadu (Virudhunagar), Telangana (Warangal), Gujarat (Navsari), Karnataka (Kalaburagi), Madhya Pradesh (Dhar), Uttar Pradesh (Lucknow), and Maharashtra (Amravati).",
+    currentStatus:
+      "All 7 state sites notified; master planning and SPV incorporation completed; infrastructure development and investor allocation underway.",
+    achievements:
+      "Over ₹70,000 Crore investment commitments pledged by textile industry associations across the seven designated parks.",
+    challenges:
+      "Ensuring rapid land clearances and uninterrupted zero liquid discharge (ZLD) effluent facilities; high international shipping and raw cotton price volatility.",
+    convergence: ["Production Linked Incentive (PLI) for Textiles", "PM Gati Shakti National Master Plan", "National Technical Textiles Mission"],
+    sdgs: ["SDG 8: Decent Work & Economic Growth", "SDG 9: Industry, Innovation & Infrastructure", "SDG 12: Responsible Consumption & Production"],
+    constitutionalLinks: ["Article 39(b) - equitable distribution of material resources", "Article 41 - right to work"],
+    prelims: [
+      "PM MITRA is inspired by the 5F formula: Farm to Fibre to Factory to Fashion to Foreign.",
+      "The scheme is setting up 7 Mega Parks in Tamil Nadu, Telangana, Gujarat, Karnataka, MP, UP, and Maharashtra.",
+      "Maximum Development Capital Support of ₹500 Crore per park is provided by the Central Government."
+    ],
+    mains:
+      "Discuss how the PM MITRA scheme addresses scale and fragmentation bottlenecks in India's textile supply chain to compete with global manufacturing giants like Bangladesh and Vietnam.",
+    keywords: ["PM MITRA", "5F Formula", "Plug-and-play", "Textiles PLI", "CETP", "Zero Liquid Discharge"],
+    sourceKey: "mot",
+    prelimsRelevance: 5,
+    mainsRelevance: 5
+  },
+  {
+    id: "green-hydrogen",
+    name: "National Green Hydrogen Mission",
+    ministry: "Ministry of New & Renewable Energy",
+    launchYear: 2023,
+    type: "Central Sector Mission",
+    sector: "Clean Energy & Climate Change",
+    target: "Renewable energy producers, electrolyser manufacturers, steel/fertiliser/refinery industries, shipping and long-haul transport sectors.",
+    benefit: "Direct financial production incentives under SIGHT (Strategic Interventions for Green Hydrogen Transition) for domestic electrolyser manufacturing and green hydrogen production.",
+    funding: "Central Sector Mission with initial outlay of ₹19,744 Crore.",
+    dbt: false,
+    objective:
+      "To make India a global hub for the production, usage, and export of Green Hydrogen and its derivatives, targeting at least 5 MMT (Million Metric Tonnes) annual green hydrogen production capacity by 2030, abating ~50 MMT of annual greenhouse gas emissions.",
+    implementation:
+      "Administered by MNRE with Solar Energy Corporation of India (SECI) as the implementing agency for SIGHT competitive bidding; establishment of Green Hydrogen Hubs and bunkering ports.",
+    currentStatus:
+      "Tranche-I and Tranche-II tenders for 412,000 tonnes/year green hydrogen production and 1,500 MW/year electrolyser manufacturing awarded; Green Hydrogen Standards officially notified (emission threshold < 2 kg CO2 equivalent per kg H2).",
+    achievements:
+      "Kandla, Paradip, and Tuticorin identified as green hydrogen bunkering and export ports; pilot projects initiated in green steel, heavy trucks, and green shipping.",
+    challenges:
+      "High levelised cost of green hydrogen ($4-5/kg vs $1.5/kg for grey hydrogen); electrolyser supply-chain dependencies; high water consumption requirements for electrolysis.",
+    convergence: ["National Solar Mission", "PLI Scheme for High Efficiency Solar PV", "Perform Achieve and Trade (PAT) Scheme"],
+    sdgs: ["SDG 7: Affordable & Clean Energy", "SDG 9: Industry & Innovation", "SDG 13: Climate Action"],
+    constitutionalLinks: ["Article 48A - protection and improvement of environment and safeguarding of forests"],
+    prelims: [
+      "The National Green Hydrogen Mission targets at least 5 MMT annual production capacity by 2030.",
+      "The SIGHT programme provides financial incentives for both electrolyser manufacturing and green hydrogen production.",
+      "India's Green Hydrogen standard mandates that well-to-gate emissions must not exceed 2 kg CO2 equivalent per kg of H2 produced."
+    ],
+    mains:
+      "Evaluate the National Green Hydrogen Mission as a dual engine for achieving India's Net Zero 2070 climate target and ending its $150 billion annual fossil fuel import dependence.",
+    keywords: ["Green Hydrogen", "SIGHT Program", "Electrolyser", "5 MMT Target", "Net Zero 2070", "SECI"],
+    sourceKey: "mnre",
+    prelimsRelevance: 5,
+    mainsRelevance: 5
+  },
+  {
+    id: "pm-edrive",
+    name: "PM Electric Drive Revolution in Innovative Vehicle Enhancement (PM E-DRIVE)",
+    ministry: "Ministry of Heavy Industries",
+    launchYear: 2024,
+    type: "Central Sector Scheme",
+    sector: "Electric Mobility & Sustainable Transport",
+    target: "Buyers of electric two-wheelers (e-2W), electric three-wheelers (e-3W), electric ambulances, electric buses, and public EV charging station operators.",
+    benefit: "Upfront demand incentives via Aadhaar-authenticated e-vouchers; funding for 14,028 e-buses, 88,500 charging stations, and dedicated modernisation of testing agencies.",
+    funding: "Central Sector Scheme with financial outlay of ₹10,900 Crore (spanning 2024 to 2026).",
+    dbt: true,
+    objective:
+      "To accelerate the adoption of electric vehicles (EVs) across India, establish robust public charging infrastructure, reduce vehicular pollution, and replace the legacy FAME-II framework with a transparent digital subsidy mechanism.",
+    implementation:
+      "Implemented by the Ministry of Heavy Industries using the PM E-DRIVE digital portal; buyers receive an Aadhaar-linked e-voucher downloaded on their mobile phone, submitted to the dealer for an instant discount reimbursed by the government.",
+    currentStatus:
+      "Officially approved by Union Cabinet in September 2024; operational guidelines and portal launched; replaces FAME-II and EMPS (Electric Mobility Promotion Scheme).",
+    achievements:
+      "Targets subsidising ~24.79 lakh e-2Ws, 3.16 lakh e-3Ws, 14,028 e-buses (via CESL), and deploying 22,100 fast chargers for e-4Ws, 1,800 for e-buses, and 48,400 for e-2W/3Ws.",
+    challenges:
+      "Subsidies phased down for private 4-wheelers; battery cell raw material (lithium, cobalt, nickel) import dependencies; grid load management during peak charging.",
+    convergence: ["PLI for Advanced Chemistry Cell (ACC) Battery Storage", "PLI for Auto and Auto Components", "PM-eBus Sewa"],
+    sdgs: ["SDG 11: Sustainable Cities & Communities", "SDG 13: Climate Action", "SDG 9: Industry & Innovation"],
+    constitutionalLinks: ["Article 21 - right to clean and healthy environment", "Article 47 - duty of the State to raise public health"],
+    prelims: [
+      "PM E-DRIVE replaced the FAME-II scheme in September 2024 with a total budget of ₹10,900 Crore.",
+      "The scheme introduces Aadhaar-authenticated digital 'e-vouchers' for seamless subsidy disbursement.",
+      "Dedicated funding is earmarked for EV testing agencies (ARAI, ICAT) and public charging infrastructure."
+    ],
+    mains:
+      "Assess how the PM E-DRIVE scheme marks a policy pivot from consumer subsidy dependence toward sustainable EV infrastructure and indigenous battery component manufacturing.",
+    keywords: ["PM E-DRIVE", "e-vouchers", "FAME-II successor", "Electric Buses", "Charging Infrastructure", "Heavy Industries"],
+    sourceKey: "heavyindustries",
+    prelimsRelevance: 5,
+    mainsRelevance: 5
+  },
+  {
+    id: "mission-mausam",
+    name: "Mission Mausam (Climate & Weather Excellence)",
+    ministry: "Ministry of Earth Sciences",
+    launchYear: 2024,
+    type: "Central Sector Mission",
+    sector: "Science, Meteorology & Disaster Management",
+    target: "Farmers, coastal fishermen, disaster response agencies (NDRF/SDMA), aviation, defense forces, and urban municipal corporations.",
+    benefit: "High-resolution weather forecasts down to village/panchayat level, advance cyclone and lightning alerts, artificial cloud seeding and hail suppression capabilities.",
+    funding: "Central Sector Mission with outlay of ₹2,000 Crore over two years.",
+    dbt: false,
+    objective:
+      "To transform India into a 'weather-ready and climate-smart' nation by exponentially improving atmospheric observation, high-resolution numerical weather prediction (NWP) modeling, AI/ML weather forecasting, and atmospheric intervention technologies.",
+    implementation:
+      "Executed jointly by three premier Earth Sciences institutes: India Meteorological Department (IMD), Indian Institute of Tropical Meteorology (IITM, Pune), and National Centre for Medium Range Weather Forecasting (NCMRWF, Noida).",
+    currentStatus:
+      "Approved by the Union Cabinet in September 2024; deployment of 50 new Doppler Weather Radars, 60 wind profilers, 100 radiometers, and next-generation high-performance computing (HPC) systems underway.",
+    achievements:
+      "Setting up dedicated cloud simulation chambers at IITM Pune for lab-tested cloud seeding and rainfall enhancement experiments.",
+    challenges:
+      "Modeling micro-climate vagaries in complex Himalayan and coastal terrains; ethical and cross-boundary weather modification protocols.",
+    convergence: ["National Cyclone Risk Mitigation Project", "PM Fasal Bima Yojana", "Mausam Mobile App / DAMINI Lightning App"],
+    sdgs: ["SDG 13: Climate Action", "SDG 11: Sustainable Cities", "SDG 2: Zero Hunger (Agricultural Protection)"],
+    constitutionalLinks: ["Article 51A(h) - develop scientific temper, humanism and the spirit of inquiry and reform"],
+    prelims: [
+      "Mission Mausam was approved in September 2024 with an outlay of ₹2,000 Crore under the Ministry of Earth Sciences.",
+      "Implemented jointly by IMD, IITM Pune, and NCMRWF Noida.",
+      "Includes experimental exploration of weather modification technologies like cloud seeding and warm cloud microphysics."
+    ],
+    mains:
+      "Examine how 'Mission Mausam' can bolster India's disaster preparedness, agricultural productivity, and climate resilience in the era of frequent extreme weather events.",
+    keywords: ["Mission Mausam", "Doppler Weather Radars", "Cloud Seeding", "IMD", "Earth Sciences", "Weather-Ready"],
+    sourceKey: "moes",
+    prelimsRelevance: 5,
+    mainsRelevance: 5
+  },
+  {
+    id: "anrf",
+    name: "Anusandhan National Research Foundation (ANRF)",
+    ministry: "Department of Science & Technology / Office of the Principal Scientific Adviser",
+    launchYear: 2023,
+    type: "Statutory Apex Research Body",
+    sector: "Science, Technology & Higher Education",
+    target: "University faculty, doctoral scholars, state universities, tier-2 and tier-3 academic institutions, startup incubators, and corporate R&D labs.",
+    benefit: "Merit-based competitive research grants, professorships, seed funding for state universities, translation grants for commercialisation, and industry-academia consortia.",
+    funding: "Statutory fund with an estimated ₹50,000 Crore corpus over 5 years (2023–2028), of which ~70% (₹36,000 Cr) is targeted to be mobilised from non-governmental/private sector sources.",
+    dbt: false,
+    objective:
+      "To provide high-level strategic direction for scientific research in the country as per recommendations of NEP 2020, seed and scale up research culture in universities (especially state universities where research is nascent), and bridge the chasm between basic research and commercial innovation.",
+    implementation:
+      "Governed by the ANRF Act, 2023 (repealing the Science and Engineering Research Board - SERB). Prime Minister serves as the ex-officio President of the Governing Board, and the Union Minister of Science & Technology and Union Minister of Education serve as Vice-Presidents.",
+    currentStatus:
+      "Governing Board and Executive Council operational; first Governing Board meeting chaired by the PM in September 2024; launch of pioneer initiatives like 'Partnerships for Accelerated Innovation and Research' (PAIR) and 'Mission for Advancement in High-Impact Areas' (MAHA).",
+    achievements:
+      "PAIR initiative pairs top tier-1 institutions (IITs, IISc) with hub-and-spoke state universities to elevate provincial research infrastructure.",
+    challenges:
+      "Achieving the ambitious 70% private sector co-funding target in an economy where corporate R&D spending has historically hovered below 0.3% of GDP; streamlining bureaucratic grant disbursements.",
+    convergence: ["National Education Policy (NEP) 2020", "National Deep Tech Startup Policy", "National Quantum Mission"],
+    sdgs: ["SDG 9: Industry, Innovation & Infrastructure", "SDG 4: Quality Education", "SDG 8: Economic Growth"],
+    constitutionalLinks: ["Article 51A(h) - development of scientific temper", "Entry 66 of Union List - coordination and determination of standards in higher education and research"],
+    prelims: [
+      "The Prime Minister of India is the ex-officio President of the Governing Board of ANRF.",
+      "The ANRF Act (2023) repealed and replaced the Science and Engineering Research Board (SERB established in 2008).",
+      "Out of the total ₹50,000 Crore outlay, roughly ₹36,000 Crore is targeted to be raised from the private sector and philanthropic sources."
+    ],
+    mains:
+      "Evaluate the structural design of the Anusandhan National Research Foundation (ANRF). Can private sector funding and state university mentorship transform India's scientific research ecosystem?",
+    keywords: ["ANRF", "NEP 2020", "R&D Spending", "SERB", "PAIR Program", "MAHA Networks", "Science & Technology"],
+    sourceKey: "dst",
+    prelimsRelevance: 5,
+    mainsRelevance: 5
+  }
 ];

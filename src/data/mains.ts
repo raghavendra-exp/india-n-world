@@ -66,4 +66,114 @@ export const MAINS_QUESTIONS: MainsQuestion[] = [
     question: "Discuss the significance of the India-EU Free Trade Agreement for India's strategy of trade diversification, and the challenges that remain before it enters into force.",
     keywords: ["India-EU FTA", "BTIA", "trade diversification", "ratification", "tariff lines", "labour-intensive exports"],
   },
+  {
+    id: "m14",
+    gsPaper: "GS-II",
+    topic: "Maritime Security & Red Sea Crisis",
+    directive: "Analyse",
+    wordLimit: 250,
+    time: 15,
+    question:
+      "The disruption of maritime traffic in the Red Sea and Bab-el-Mandeb chokepoint highlights the fragility of global trade arteries. In this context, analyse the strategic, economic, and security implications for India, and evaluate the Indian Navy's role as a 'first responder' and net security provider under Operation Sankalp.",
+    keywords: [
+      "Bab-el-Mandeb",
+      "Red Sea",
+      "Operation Sankalp",
+      "Net Security Provider",
+      "Cape of Good Hope",
+      "Freight Surcharges",
+      "SAGAR",
+      "Maritime Domain Awareness",
+      "IFC-IOR",
+      "Supply Chain Resilience"
+    ]
+  },
+  {
+    id: "m15",
+    gsPaper: "GS-II",
+    topic: "IMEC & Geoeconomics",
+    directive: "Critically examine",
+    wordLimit: 250,
+    time: 15,
+    question:
+      "Critically examine the strategic rationale of the India-Middle East-Europe Economic Corridor (IMEC) as an alternative to China's Belt and Road Initiative (BRI). What geopolitical conflicts and financing bottlenecks threaten its ground implementation, and how can India safeguard its connectivity vision?",
+    keywords: [
+      "IMEC",
+      "G20 New Delhi Summit",
+      "Belt and Road Initiative (BRI)",
+      "Northern and Eastern Corridors",
+      "Multimodal Rail-Sea",
+      "Levant Instability",
+      "Green Hydrogen Pipelines",
+      "De-risking",
+      "Abraham Accords",
+      "Strategic Autonomy"
+    ]
+  },
+  {
+    id: "m16",
+    gsPaper: "GS-II",
+    topic: "Neighbourhood First & Regional Transitions",
+    directive: "Discuss",
+    wordLimit: 250,
+    time: 15,
+    question:
+      "India's 'Neighbourhood First' policy has faced significant volatility due to regime transitions and domestic anti-incumbency in countries like Bangladesh, Maldives, and Sri Lanka. Discuss the limits of India's diplomatic leverage in South Asia and suggest measures to insulate bilateral relations from regime changes.",
+    keywords: [
+      "Neighbourhood First",
+      "Gujral Doctrine",
+      "Non-reciprocity",
+      "Regime Transitions",
+      "Anti-India Narratives",
+      "Chinese Strategic Inroads",
+      "Line of Credit",
+      "People-to-people Connectivity",
+      "BIMSTEC",
+      "High-Impact Community Development Projects (HICDP)"
+    ]
+  },
+  {
+    id: "m17",
+    gsPaper: "GS-II",
+    topic: "Vishwa Mitra & Global South",
+    directive: "Evaluate",
+    wordLimit: 250,
+    time: 15,
+    question:
+      "Evaluate India's posture as a 'Vishwa Mitra' (universal friend) and voice of the Global South. Can India effectively champion the developmental aspirations of the developing world while simultaneously deepening strategic, technological, and security partnerships with Western powers?",
+    keywords: [
+      "Vishwa Mitra",
+      "Global South",
+      "Voice of Global South Summit",
+      "African Union G20",
+      "Multi-alignment",
+      "Strategic Autonomy",
+      "DPI Export",
+      "Climate Finance",
+      "Bridging Power",
+      "Polarised World Order"
+    ]
+  },
+  {
+    id: "m18",
+    gsPaper: "GS-III",
+    topic: "Trade Architecture: Mega-FTAs vs Bilateral Pacts",
+    directive: "Elucidate",
+    wordLimit: 250,
+    time: 15,
+    question:
+      "Elucidate the economic and strategic rationale behind India's refusal to join mega-regional plurilateral trade pacts like RCEP and CPTPP. In light of rising global protectionism, analyze how targeted bilateral trade pacts (such as CEPAs with UAE, Australia, and EFTA) serve India's export and industrialization ambitions.",
+    keywords: [
+      "RCEP",
+      "CPTPP",
+      "Rules of Origin",
+      "Chinese Dumping",
+      "Bilateral CEPA",
+      "UAE CEPA",
+      "EFTA TEPA",
+      "Supply Chain Re-shoring",
+      "Atmanirbhar Bharat",
+      "Trade Deficit Management"
+    ]
+  }
 ];

@@ -199,4 +199,187 @@ export const ORGANISATIONS: Organisation[] = [
     ],
     sourceKey: "mea", lastVerified: LAST_VERIFIED,
   },
+  {
+    id: "i2u2",
+    name: "I2U2 Grouping ('West Asian Quad')",
+    established: "2021 (Virtual Summit July 2022)",
+    headquarters: "No permanent secretariat (ad-hoc summit mechanism)",
+    members: ["India", "Israel", "United Arab Emirates", "United States"],
+    indiaStatus: "Founding Member",
+    purpose:
+      "A mini-lateral economic partnership aimed at mobilising private sector capital and expertise to modernise infrastructure, advance clean energy, improve public health, and address food and water insecurity across South Asia and the Middle East.",
+    initiatives: [
+      "$2 billion integrated hybrid food parks project in Gujarat (funded by UAE, with US/Israeli technology and Indian land/farmers).",
+      "300 MW hybrid renewable energy project (wind and solar complemented by battery storage) in Dwarka, Gujarat.",
+      "Support for India's bid to join the Agriculture Innovation Mission for Climate (AIM for Climate)."
+    ],
+    indiaRole:
+      "Brings massive agricultural demand, fertile landmass, skilled engineering talent, and consumer market scale, marrying UAE sovereign capital with American/Israeli breakthrough technologies.",
+    currentIssues:
+      "Pace of joint investment initiatives impacted by heightened regional security instability in the Middle East following the October 2023 Israel-Gaza conflict.",
+    prelims: [
+      "I2U2 stands for India, Israel, UAE, and the USA (originally termed the 'International Forum for Economic Cooperation').",
+      "The grouping focuses on six mutually identified sectors: water, energy, transportation, space, health, and food security.",
+      "The first leaders' summit was held virtually in July 2022."
+    ],
+    sourceKey: "mea",
+    lastVerified: "2026-09"
+  },
+  {
+    id: "imec",
+    name: "India-Middle East-Europe Economic Corridor (IMEC)",
+    established: "September 2023 (New Delhi G20 Summit)",
+    headquarters: "Coordinated through a multi-nation ministerial steering committee",
+    members: [
+      "India",
+      "United States",
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "European Union",
+      "France",
+      "Germany",
+      "Italy"
+    ],
+    indiaStatus: "Lead Co-Sponsor & Origin Anchor",
+    purpose:
+      "A historic multi-modal ship-to-rail transit network designed to connect India's western ports (Kandla, JNPT) to Europe via the Arabian Gulf (UAE, Saudi Arabia, Jordan, Israel) and the Mediterranean Sea, fostering seamless economic integration, clean hydrogen pipelines, and high-speed digital cables.",
+    initiatives: [
+      "Eastern Corridor connecting Indian ports with the Arabian Gulf.",
+      "Northern Corridor connecting the Gulf to European ports via rail networks and Mediterranean shipping.",
+      "Laying of electricity grids, clean hydrogen export pipelines, and submarine high-speed digital telecommunication cables alongside railway tracks."
+    ],
+    indiaRole:
+      "Origin anchor and primary goods producer; India and the UAE signed the first bilateral intergovernmental framework agreement on IMEC in February 2024 during PM Modi's visit to Abu Dhabi.",
+    currentIssues:
+      "Ground execution of the rail link through Jordan and Israel has faced acute delays due to ongoing conflicts in the Levant, though maritime and Gulf railway linkages continue advance planning.",
+    prelims: [
+      "IMEC was officially unveiled on September 9, 2023 on the sidelines of the G20 New Delhi Leaders' Summit.",
+      "Projected to reduce shipping transit time between India and Europe by 40% and logistics transport costs by 30%.",
+      "Regarded internationally as a transparent, high-standard alternative to China's Belt and Road Initiative (BRI)."
+    ],
+    sourceKey: "mea",
+    lastVerified: "2026-09"
+  },
+  {
+    id: "instc",
+    name: "International North-South Transport Corridor (INSTC)",
+    established: "September 2000 (St. Petersburg)",
+    headquarters: "Tehran, Iran (Secretariat)",
+    members: [
+      "India",
+      "Iran",
+      "Russia",
+      "Azerbaijan",
+      "Armenia",
+      "Kazakhstan",
+      "Belarus",
+      "Oman",
+      "Tajikistan",
+      "Kyrgyzstan",
+      "Turkey",
+      "Ukraine",
+      "Syria"
+    ],
+    indiaStatus: "Founding Member & Chief Promoter",
+    purpose:
+      "A 7,200-kilometre-long multi-modal freight transport network combining sea, rail, and road routes for moving cargo between India, Iran, Azerbaijan, Russia, Central Asia, and Europe, bypassing Pakistan and maritime chokepoints like the Suez Canal.",
+    initiatives: [
+      "Western route: Mumbai → Bandar Abbas (Iran) → Rasht-Astara (rail) → Baku (Azerbaijan) → Moscow (Russia).",
+      "Eastern route: Mumbai → Bandar Abbas/Chabahar → Turkmenistan/Uzbekistan/Kazakhstan → Russia.",
+      "Synergies with the Ashgabat Agreement (multimodal transit framework joined by India in 2018)."
+    ],
+    indiaRole:
+      "Core driver seeking overland access to landlocked Central Asia and Russia. India has successfully advocated the inclusion of the Iranian port of Chabahar within the INSTC transit framework.",
+    currentIssues:
+      "Western financial sanctions on Russia and Iran restrict international banking integration and insurance; missing 162-km Rasht-Astara rail section in Iran being completed with Russian financing.",
+    prelims: [
+      "Originally founded by India, Iran, and Russia in September 2000 in St. Petersburg.",
+      "Reduces transit duration from 40-45 days via Suez Canal to roughly 20-22 days, cutting shipping freight charges by 30%.",
+      "Integrates with the Ashgabat Agreement and Chabahar Port."
+    ],
+    sourceKey: "mea",
+    lastVerified: "2026-09"
+  },
+  {
+    id: "fatf",
+    name: "Financial Action Task Force (FATF)",
+    established: "1989 (G7 Summit, Paris)",
+    headquarters: "Paris, France (at OECD headquarters)",
+    members: [
+      "39 members (37 jurisdictions including India, plus 2 regional organisations: European Commission & GCC)"
+    ],
+    indiaStatus: "Full Member (joined 2010)",
+    purpose:
+      "The global money laundering and terrorist financing watchdog. Sets international standards (the 40 Recommendations) to prevent organised crime, corruption, illicit arms trade, and the financing of weapons of mass destruction (WMD).",
+    initiatives: [
+      "Publication of the 'Grey List' (Jurisdictions under Increased Monitoring) and 'Black List' (High-Risk Jurisdictions Call for Action).",
+      "Periodic Mutual Evaluation Reports (MER) assessing member jurisdictions' technical compliance and effectiveness.",
+      "Evaluation of virtual digital assets (cryptocurrencies) and proliferation financing."
+    ],
+    indiaRole:
+      "In June 2024, FATF adopted India's landmark Mutual Evaluation Report, placing India in the highest 'regular follow-up' compliance category — an achievement shared by only four other G20 economies. India plays a key leadership role in APG (Asia/Pacific Group on Money Laundering).",
+    currentIssues:
+      "Preventing abuse of non-profit organisations (NPOs) while ensuring legitimate humanitarian aid; addressing terror financing through new payment technologies and digital hawala.",
+    prelims: [
+      "FATF was established by the G7 Summit in Paris in 1989.",
+      "India became an observer in 2006 and a full member in 2010.",
+      "FATF maintains two compliance lists: the Grey List (increased monitoring) and the Black List (currently Iran, North Korea, and Myanmar)."
+    ],
+    sourceKey: "fatf",
+    lastVerified: "2026-09"
+  },
+  {
+    id: "iaea",
+    name: "International Atomic Energy Agency (IAEA)",
+    established: "1957 ('Atoms for Peace')",
+    headquarters: "Vienna, Austria",
+    members: ["178 Member States"],
+    indiaStatus: "Founding Member & Designated Board of Governors Member",
+    purpose:
+      "The world's central intergovernmental forum for scientific and technical cooperation in the peaceful uses of nuclear energy, promoting nuclear safety standards and verifying that nuclear material is not diverted to military purposes (Safeguards System).",
+    initiatives: [
+      "Application of comprehensive and item-specific nuclear safeguards agreements.",
+      "Rays of Hope: initiative expanding cancer diagnosis and radiation therapy access in low- and middle-income countries.",
+      "Nuclear safety and waste management standards; monitoring of civil nuclear facilities worldwide."
+    ],
+    indiaRole:
+      "Designated member of the IAEA Board of Governors since inception as a state with the most advanced nuclear technology in South Asia. In 2009, following the Indo-US Civil Nuclear Deal, India signed the India-Specific Safeguards Agreement (INFCIRC/731) and an Additional Protocol in 2014, placing civilian reactors under IAEA verification.",
+    currentIssues:
+      "Monitoring the Zaporizhzhia nuclear power plant in Ukraine; oversight of Iran's nuclear enrichment levels under the JCPOA impasse; deployment of Small Modular Reactors (SMRs).",
+    prelims: [
+      "Created in 1957 as an autonomous organisation within the United Nations family ('Atoms for Peace').",
+      "Reports to both the UN General Assembly and the UN Security Council.",
+      "India's civil nuclear facilities are safeguarded under IAEA document INFCIRC/731."
+    ],
+    sourceKey: "iaea",
+    lastVerified: "2026-09"
+  },
+  {
+    id: "rcep-cptpp",
+    name: "Regional Mega-FTAs: RCEP & CPTPP",
+    established: "RCEP: 2020 (entered force 2022); CPTPP: 2018",
+    headquarters: "RCEP: Jakarta (ASEAN Secretariat); CPTPP: Rotating commission",
+    members: [
+      "RCEP (15): 10 ASEAN members + China, Japan, South Korea, Australia, New Zealand.",
+      "CPTPP (12): Australia, Brunei, Canada, Chile, Japan, Malaysia, Mexico, New Zealand, Peru, Singapore, Vietnam, UK (joined 2023)."
+    ],
+    indiaStatus: "Non-Member (Exited RCEP negotiations in Nov 2019)",
+    purpose:
+      "Mega-regional plurilateral free trade agreements setting tariff reduction schedules, cross-border services rules, intellectual property protections, e-commerce norms, and supply-chain integration across the Asia-Pacific region.",
+    initiatives: [
+      "RCEP: World's largest free trade bloc by GDP and population, unifying trade rules among Asian economies.",
+      "CPTPP: High-standard trade pact including stringent disciplines on state-owned enterprises (SOEs), labour standards, and environmental commitments."
+    ],
+    indiaRole:
+      "India was an original negotiating partner in RCEP from 2012 to 2019. In November 2019 at the Bangkok Summit, India opted out to protect vulnerable domestic stakeholders (dairy, MSMEs, steel, textiles) from potential surges of cheap Chinese imports, inadequate rules of origin, and unreciprocated services access.",
+    currentIssues:
+      "India's strategic shift toward targeted, high-standard bilateral free trade pacts (e.g. UAE CEPA, Australia ECTA, EFTA TEPA, UK FTA) instead of multilateral mega-blocs dominated by Chinese manufacturing dominance.",
+    prelims: [
+      "India walked out of RCEP negotiations in November 2019 at the Bangkok East Asia Summit.",
+      "RCEP accounts for roughly 30% of global gross domestic product and nearly one-third of the global population.",
+      "CPTPP originated from the Trans-Pacific Partnership (TPP) after the United States withdrew in 2017."
+    ],
+    sourceKey: "wto",
+    lastVerified: "2026-09"
+  }
 ];

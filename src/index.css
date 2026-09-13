@@ -3,7 +3,68 @@
 @tailwind utilities;
 
 html, body, #root { height: 100%; }
-body { background: #f7f3e8; color: #2b2a24; }
+body {
+  background: #f7f3e8;
+  color: #2b2a24;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.dark body {
+  background: #0b0f19;
+  color: #e2e8f0;
+}
+
 ::selection { background: #d9c295; }
+html.dark ::selection { background: #b8863b; color: #ffffff; }
+
 .scroll-thin::-webkit-scrollbar { width: 6px; height: 6px; }
 .scroll-thin::-webkit-scrollbar-thumb { background: #d9c295; border-radius: 4px; }
+html.dark .scroll-thin::-webkit-scrollbar-thumb { background: #334155; }
+
+/* Universal dark mode skinning for existing components */
+html.dark .bg-white {
+  background-color: #161f30 !important;
+}
+html.dark .border-\[\#e0d6bd\] {
+  border-color: #26334d !important;
+}
+html.dark .border-\[\#eee7d6\] {
+  border-color: #1e293b !important;
+}
+html.dark .text-\[\#2b2a24\],
+html.dark .text-\[\#1f2937\] {
+  color: #f1f5f9 !important;
+}
+html.dark .text-\[\#3b3527\],
+html.dark .text-\[\#4a4432\],
+html.dark .text-\[\#5b5340\] {
+  color: #cbd5e1 !important;
+}
+html.dark .text-\[\#8a7c58\] {
+  color: #94a3b8 !important;
+}
+html.dark .bg-\[\#fcfaf5\],
+html.dark .bg-\[\#fbf8ef\],
+html.dark .bg-\[\#f7f3e8\] {
+  background-color: #0b0f19 !important;
+}
+html.dark .bg-\[\#eee7d6\] {
+  background-color: #1e293b !important;
+  color: #cbd5e1 !important;
+  border-color: #334155 !important;
+}
+html.dark .bg-\[\#e3ede2\] {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+  color: #34d399 !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+html.dark .bg-\[\#e5e9f2\] {
+  background-color: rgba(59, 130, 246, 0.15) !important;
+  color: #60a5fa !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+html.dark .bg-\[\#fbeee0\] {
+  background-color: rgba(245, 158, 11, 0.15) !important;
+  color: #fbbf24 !important;
+  border-color: rgba(245, 158, 11, 0.3) !important;
+}

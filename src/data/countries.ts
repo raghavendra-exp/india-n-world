@@ -322,4 +322,174 @@ export const COUNTRIES: Country[] = [
     mains: "Assess the strategic significance of India's deepening partnership with Saudi Arabia for India's energy security and connectivity ambitions (IMEC).",
     sourceKey: "mea",
   },
+  {
+    id: "canada", name: "Canada", region: "North America", capital: "Ottawa",
+    relationship: "Historically cordial bilateral ties grounded in Commonwealth heritage and extensive people-to-people links, which entered a severe freeze from September 2023 following diplomatic allegations regarding the killing of a Khalistan activist in Surrey, British Columbia, resulting in tit-for-tat diplomat expulsions and suspended trade negotiations.",
+    trade: "Two-way merchandise trade exceeded $8 billion prior to diplomatic tensions; negotiations on the Early Progress Trade Agreement (EPTA) were paused in 2023. Key trade goods: Canadian pulses (lentils/potash) and Indian pharmaceuticals/IT services.",
+    defence: "Cooperation primarily through Commonwealth channels and multilateral peacekeeping forums; Canada's Indo-Pacific Strategy (2022) originally designated India as a critical partner for regional stability and supply-chain diversification.",
+    technology: "Civil nuclear cooperation agreement (2015) enabling Canadian supply of uranium to India; space cooperation between ISRO and Canadian Space Agency (CSA).",
+    diaspora: "Over 1.8 million people of Indian origin (~4% of Canada's population); India is the largest source country for international students and permanent economic immigrants to Canada.",
+    security: "Counter-terrorism dialogue and intelligence sharing tested by Ottawa's permissive stance toward radical separatism versus New Delhi's national sovereignty and territorial integrity concerns.",
+    organisations: ["G20", "G7 (guest outreach)", "Commonwealth of Nations"],
+    strategicSignificance: "Major source of energy, uranium, potash fertiliser, and institutional pension investment (CPPIB, CDPQ invested >$50bn in Indian infrastructure), balanced against acute diplomatic friction.",
+    challenges: "Safe havens for extremist/separatist activities in Canada; mutual expulsion of high commissioners and senior diplomats; paused free-trade talks; student visa processing delays.",
+    prelims: [
+      "Canada is one of the world's largest potash and uranium producers, with long-term supply arrangements for Indian agriculture and civilian nuclear power.",
+      "The Early Progress Trade Agreement (EPTA) negotiations between India and Canada were formally put on hold in 2023."
+    ],
+    mains: "Analyse how domestic diaspora politics and divergent threat perceptions have derailed the strategic trajectory of India-Canada bilateral relations.",
+    sourceKey: "mea"
+  },
+  {
+    id: "indonesia", name: "Indonesia", region: "Southeast Asia / Indo-Pacific", capital: "Jakarta (Nusantara)",
+    relationship: "Comprehensive Strategic Partnership; maritime neighbours whose Exclusive Economic Zones (EEZ) meet in the Andaman Sea (Indira Point in Great Nicobar is merely ~145 km from Rondo Island in Aceh). Civilisational linkages span Sanskrit heritage, Ramayana traditions, and the 1955 Bandung Conference.",
+    trade: "India's largest trading partner in the ASEAN region (~$35-40bn); India is the largest importer of Indonesian crude palm oil (CPO) and a major buyer of thermal coal, while exporting refined petroleum, wheat, and commercial vehicles.",
+    defence: "Joint naval patrol (CORPAT) conducted since 2002; Samudra Shakti bilateral naval exercise; Garuda Shakti special forces army exercise. In 2018, both nations signed the 'Shared Vision on Maritime Cooperation in the Indo-Pacific'.",
+    technology: "Cooperation in satellite telemetry and space tracking (ISRO TTC Station in Biak Island); digital public infrastructure (DPI) knowledge-sharing.",
+    diaspora: "Roughly 140,000 Indian diaspora concentrated in Medan, Surabaya, and Jakarta; active business and textile communities.",
+    security: "Joint focus on freedom of navigation through the Straits of Malacca, Sunda, and Lombok; exploration of joint development and Indian commercial/naval access to Sabang Port in Aceh.",
+    organisations: ["ASEAN", "G20", "IORA", "NAM", "East Asia Summit (EAS)"],
+    strategicSignificance: "Anchor of ASEAN and fulcrum of the Indo-Pacific; strategic sentinel guarding vital international straits through which over a third of global maritime trade passes.",
+    challenges: "Trade imbalance tilted toward Indonesia due to massive coal and palm oil imports; non-tariff barriers; palm oil tariff volatility.",
+    prelims: [
+      "The 'Six Degree Channel' separates Great Nicobar Island of India from Rondo Island of Indonesia.",
+      "Exercise 'Samudra Shakti' is the bilateral naval exercise between the Indian Navy and the Indonesian Navy.",
+      "ISRO operates a Telemetry, Tracking and Command (TTC) station at Biak in Indonesia."
+    ],
+    mains: "Evaluate the strategic significance of Indonesia in India's 'Act East' policy and Indo-Pacific maritime security architecture, particularly in the context of the Malacca Strait.",
+    sourceKey: "mea"
+  },
+  {
+    id: "singapore", name: "Singapore", region: "Southeast Asia", capital: "Singapore",
+    relationship: "Comprehensive Strategic Partnership (elevated during PM Modi's 2024 visit); India's primary financial, trade, and diplomatic gateway to Southeast Asia and the ASEAN region.",
+    trade: "Historically India's top source of Foreign Direct Investment (FDI), accounting for over 25-30% of total cumulative equity inflows; India-Singapore Comprehensive Economic Cooperation Agreement (CECA, 2005) was India's first comprehensive bilateral free trade agreement.",
+    defence: "Deepest defence interoperability among ASEAN partners: Singapore Army trains at Babina and Deolali; Singapore Air Force trains at Kalaikunda; SIMBEX (Singapore-India Maritime Bilateral Exercise) is India's longest uninterrupted bilateral naval drill (since 1994).",
+    technology: "Historic linkage of India's Unified Payments Interface (UPI) with Singapore's PayNow in February 2023 — the world's first cross-border real-time retail payment system linkage; joint semiconductor ecosystem cooperation (MoU signed Sept 2024).",
+    diaspora: "Over 650,000 persons of Indian origin (~9% of population); Tamil is one of the four official languages of Singapore.",
+    security: "Shared dedication to maritime security in the Malacca Strait; logistic support agreement signed between navies in 2017 allowing Indian warships mutual replenishment.",
+    organisations: ["ASEAN", "East Asia Summit (EAS)", "IORA (dialogue partner)", "FATF"],
+    strategicSignificance: "Financial capital of the Indo-Pacific; catalytic partner in the launch of India's 'Look East' policy (1992) and subsequent 'Act East' deepening.",
+    challenges: "Domestic scrutiny in India regarding tax treaties and round-tripping of capital; global economic headwinds and supply chain realignment.",
+    prelims: [
+      "CECA (2005) with Singapore was India's very first Comprehensive Economic Cooperation Agreement.",
+      "SIMBEX has been conducted uninterrupted since 1994 between the Indian Navy and Republic of Singapore Navy.",
+      "UPI-PayNow linkage was inaugurated in February 2023 as the pioneer real-time cross-border retail payment corridor."
+    ],
+    mains: "Discuss how Singapore acts as a catalyst for India's digital public infrastructure, fintech exports, and semiconductor manufacturing ambitions.",
+    sourceKey: "mea"
+  },
+  {
+    id: "mauritius", name: "Mauritius", region: "Indian Ocean / Africa", capital: "Port Louis",
+    relationship: "'Super-special' bilateral relationship rooted in intense cultural, historical, and kinship links ('Chhota Bharat'). The prime minister and leadership are predominantly of Indian origin (descendants of 19th-century indentured Girmitiya labourers).",
+    trade: "India-Mauritius Comprehensive Economic Cooperation and Partnership Agreement (CECPA, signed 2021) was the very first trade pact executed by India with any African country; substantial Indian development assistance (Metro Express project, New Supreme Court, ENT Hospital).",
+    defence: "Mauritius does not maintain a standing army; its Police Force and National Coast Guard are equipped, trained, and officer-deputed by India. Dornier aircraft and coastal interceptor craft gifted by India.",
+    technology: "Rupay card and UPI services launched in Mauritius in February 2024; joint small satellite development agreement with ISRO.",
+    diaspora: "Nearly 68% of the Mauritian population is of Indian descent; Pravasi Bharatiya Samman recipients.",
+    security: "Key pillar of India's SAGAR doctrine; joint inauguration of the 3,000 m airstrip and St. James Jetty at Agalega Island in February 2024 for maritime domain awareness and anti-piracy operations in the southwest Indian Ocean.",
+    organisations: ["IORA (headquarters at Ebene)", "African Union", "IOC (Indian Ocean Commission)", "CDRI"],
+    strategicSignificance: "Strategic hub at the crossroads of the western Indian Ocean and southern Africa; hosts the permanent Secretariat of the Indian Ocean Rim Association (IORA).",
+    challenges: "Revision of the Double Tax Avoidance Agreement (DTAA) to curb tax treaty abuse; local political debates over environmental impacts and sovereignty sensitivities.",
+    prelims: [
+      "The CECPA (2021) with Mauritius was India's first free trade agreement signed with an African nation.",
+      "The Headquarters of the Indian Ocean Rim Association (IORA) is located at Ebene, Mauritius.",
+      "The newly upgraded Agalega Island airstrip and jetty were inaugurated jointly by the Prime Ministers of India and Mauritius in February 2024."
+    ],
+    mains: "Evaluate the strategic significance of Mauritius as a linchpin in India's SAGAR doctrine and Indian Ocean maritime security architecture.",
+    sourceKey: "mea"
+  },
+  {
+    id: "seychelles", name: "Seychelles", region: "Indian Ocean / Africa", capital: "Victoria",
+    relationship: "Special strategic relationship in the Western Indian Ocean; foundational to India's vision of SAGAR (Security and Growth for All in the Region), which was originally unveiled by PM Modi in Seychelles in March 2015.",
+    trade: "Bilateral trade is modest; India provides extensive lines of credit and grant aid for infrastructure (Seychelles Magistrates Court, police headquarters, health centers).",
+    defence: "India provides defense equipment, training, and radar installations; gifted naval patrol vessels (including PS Zoroaster in 2021 and INS Tarasa/PS Topaz) and Dornier DO-228 maritime patrol aircraft.",
+    technology: "E-VidyaBharati and e-AarogyaBharati (tele-education and tele-medicine) network partner.",
+    diaspora: "Indo-Seychellois comprise ~6% of the population; historical presence as merchant traders since the 18th century.",
+    security: "Coastal Surveillance Radar System (CSRS) station in Seychelles linked to the Indian Navy's Information Fusion Centre - Indian Ocean Region (IFC-IOR) at Gurugram; joint agreement for infrastructure development on Assumption Island.",
+    organisations: ["IORA", "IOC (Indian Ocean Commission)", "African Union", "Commonwealth"],
+    strategicSignificance: "Overlooks the Mozambique Channel and western Indian Ocean choke routes; critical radar node countering drug trafficking, maritime piracy, and illegal fishing.",
+    challenges: "Domestic political debate in Seychelles regarding sovereignty and parliamentary ratification of the Assumption Island base agreement.",
+    prelims: [
+      "Prime Minister Modi originally enunciated the SAGAR doctrine during his visit to Seychelles in March 2015.",
+      "Patrol Vessel 'PS Zoroaster' was built by GRSE Kolkata and delivered to the Seychelles Coast Guard in 2021.",
+      "Seychelles coastal radars feed maritime domain awareness data directly into IFC-IOR at Gurugram."
+    ],
+    mains: "Discuss how India balances small island state sensitivities with its broader security imperatives in the Western Indian Ocean.",
+    sourceKey: "mea"
+  },
+  {
+    id: "oman", name: "Oman", region: "West Asia / Gulf", capital: "Muscat",
+    relationship: "Strategic Partnership; India's oldest strategic partner in the Gulf Cooperation Council (GCC) region. Long-standing personal rapport with the Sultanate family and historic trade across the Arabian Sea spanning millennia.",
+    trade: "Bilateral trade reached ~$12-13 billion; active negotiations for a bilateral Comprehensive Economic Partnership Agreement (CEPA) to grant duty-free access to goods and services.",
+    defence: "Unique defence convergence: Oman is the only West Asian country with which all three wings of India's armed forces conduct joint exercises (Army: Al Najah; Navy: Naseem Al Bahr; Air Force: Eastern Bridge). Indian Navy has operational access to Duqm Port.",
+    technology: "Space cooperation between ISRO and Oman's Ministry of Transport, Communications and Information Technology; RuPay card acceptance launched across Oman ATM networks.",
+    diaspora: "Over 650,000 Indian expatriates, constituting a highly regarded and valued professional, engineering, and workforce community.",
+    security: "Duqm Port military access agreement (2018) provides Indian warships maintenance, logistics, and dry-dock berthing overlooking the Gulf of Oman, Strait of Hormuz, and Arabian Sea.",
+    organisations: ["GCC", "IORA", "Arab League"],
+    strategicSignificance: "Key Western anchor of India's maritime security architecture in the Arabian Sea; gatekeeper to the Strait of Hormuz and crucial partner for energy and fertiliser supplies (Oman India Fertiliser Company - OMIFCO).",
+    challenges: "Navigating Middle East regional rivalries; ensuring timely conclusion and implementation of the bilateral CEPA.",
+    prelims: [
+      "All three wings of the Indian Armed Forces conduct exercises with Oman: Naseem Al Bahr (Navy), Al Najah (Army), and Eastern Bridge (Air Force).",
+      "Duqm Port, where India has naval logistics and repair access, is situated on Oman's southeastern Arabian Sea coast.",
+      "OMIFCO is a major joint venture in Sur, Oman, supplying long-term urea supplies to India."
+    ],
+    mains: "Examine the role of Oman as India's premier gateway to West Asia and a cornerstone of maritime security in the Arabian Sea.",
+    sourceKey: "mea"
+  },
+  {
+    id: "kazakhstan", name: "Kazakhstan", region: "Central Asia", capital: "Astana",
+    relationship: "Strategic Partnership (since 2009); India's largest trade and investment partner in Central Asia. Civilisational linkages along the ancient Silk Route.",
+    trade: "Bilateral trade accounts for over 70% of India's total trade with Central Asia; primary imports are crude petroleum and natural uranium; exports include pharmaceuticals, tea, and machinery.",
+    defence: "Exercise KAZIND (annual joint army drill); military training exchanges; UN peacekeeping deployment in Lebanon where a Kazakh contingent deployed as part of an Indian battalion.",
+    technology: "Space cooperation; IT and software hubs; cooperation in civil nuclear energy and rare earths.",
+    diaspora: "Modest diaspora (~7,000 to 10,000), mainly medical students and Indian corporate managers.",
+    security: "Countering cross-border terrorism and religious extremism; member of the Ashgabat Agreement and INSTC transit corridor.",
+    organisations: ["SCO", "CICA (Conference on Interaction and Confidence Building Measures in Asia)", "UN"],
+    strategicSignificance: "World's largest uranium producer; supplies roughly 80% of India's total imported natural uranium fuel for IAEA-safeguarded nuclear power reactors.",
+    challenges: "Lack of direct overland connectivity due to Pakistan's refusal of transit rights; dependence on routes via Iran (Chabahar / INSTC); Russian and Chinese geopolitical dominance in Central Asia.",
+    prelims: [
+      "Kazakhstan is the single largest supplier of natural uranium fuel to India's civil nuclear energy program.",
+      "Exercise 'KAZIND' is the annual joint military exercise between the Indian Army and the Kazakhstan Armed Forces.",
+      "India is a member of the Ashgabat Agreement, which facilitates transit trade across Central Asia and the Persian Gulf."
+    ],
+    mains: "Critically evaluate India's 'Connect Central Asia' policy with special reference to energy security, uranium sourcing, and the Chabahar connectivity corridor.",
+    sourceKey: "mea"
+  },
+  {
+    id: "egypt", name: "Egypt", region: "North Africa / West Asia", capital: "Cairo",
+    relationship: "Strategic Partnership (elevated in January 2023 during President Abdel Fattah el-Sisi's state visit as Chief Guest for India's 74th Republic Day). Shared historic leadership of the Non-Aligned Movement (Nehru and Nasser).",
+    trade: "Bilateral trade expanded to ~$6-7 billion; Egypt is one of India's largest trading partners in Africa; discussions ongoing for an Indian dedicated industrial zone at the Suez Canal Economic Zone (SCZONE).",
+    defence: "Joint Special Forces exercise 'Cyclone' launched in 2023; joint air drills; prospective Indian exports of defence systems including Tejas LCA and radar hardware.",
+    technology: "Cooperation in satellite communication, green hydrogen manufacturing, and digital financial platforms.",
+    diaspora: "Around 4,000 Indian nationals, primarily professionals and entrepreneurs in Alexandria and Cairo.",
+    security: "Shared counter-terrorism intelligence and security of the maritime trade lanes transiting the Suez Canal and Red Sea.",
+    organisations: ["BRICS (joined 2024)", "Arab League", "African Union", "NAM"],
+    strategicSignificance: "Command of the Suez Canal through which ~12% of global trade and ~30% of container cargo passes; influential voice in the Arab League and African Union.",
+    challenges: "Egypt's foreign exchange and sovereign debt pressures; ongoing geopolitical volatility in the Red Sea and Levant.",
+    prelims: [
+      "Egyptian President Abdel Fattah el-Sisi was the Chief Guest at India's 74th Republic Day celebrations in January 2023.",
+      "Exercise 'Cyclone' is the maiden joint special forces exercise conducted between India and Egypt in Rajasthan (2023).",
+      "Egypt formally became a member of the BRICS grouping in 2024."
+    ],
+    mains: "Discuss how the elevation of India-Egypt relations to a Strategic Partnership enhances India's strategic reach across the Mediterranean and Red Sea maritime corridors.",
+    sourceKey: "mea"
+  },
+  {
+    id: "italy", name: "Italy", region: "Europe", capital: "Rome",
+    relationship: "Strategic Partnership (elevated March 2023); a complete turnaround from past bilateral diplomatic freezes (Enrica Lexie marines case), marked by close political alignment between PM Modi and PM Giorgia Meloni.",
+    trade: "Two-way trade surpassed €14 billion; Italy is among India's top 5 trading partners in the European Union. Key sectors: machinery, automotive, renewable energy, and luxury fashion.",
+    defence: "Bilateral Defence Cooperation Agreement signed in October 2023; Italian Navy aircraft carrier ITS Cavour made port calls in India in 2024 and participated in joint maritime drills.",
+    technology: "Cooperation in renewable energy, semiconductors, and green hydrogen; Global Biofuels Alliance founding member.",
+    diaspora: "Second-largest Indian diaspora in continental Europe (over 200,000), predominantly working in agriculture, dairy, and engineering in northern Italy.",
+    security: "Key European anchor for the India-Middle East-Europe Economic Corridor (IMEC); Migration and Mobility Partnership Agreement (MMPA) signed in 2023.",
+    organisations: ["G7", "G20", "European Union", "Global Biofuels Alliance (founding member)"],
+    strategicSignificance: "Crucial Mediterranean destination and rail-port gateway for IMEC; Italy's withdrawal from China's Belt and Road Initiative (BRI) in 2023 opened expanded space for partnership with India.",
+    challenges: "Navigating EU-wide carbon border adjustment mechanism (CBAM) impacts on Indian steel and aluminium; finalizing the broader India-EU Free Trade Agreement.",
+    prelims: [
+      "Italy formally withdrew from China's Belt and Road Initiative (BRI) in December 2023.",
+      "Italy is a founding member of the Global Biofuels Alliance (GBA) launched during the New Delhi G20 Summit.",
+      "India and Italy signed a landmark Migration and Mobility Partnership Agreement (MMPA) in November 2023."
+    ],
+    mains: "Analyse the strategic and economic drivers behind the recent reset in India-Italy relations and its role in the India-Middle East-Europe Economic Corridor (IMEC).",
+    sourceKey: "mea"
+  }
 ];

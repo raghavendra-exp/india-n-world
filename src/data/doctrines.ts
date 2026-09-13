@@ -134,4 +134,109 @@ export const DOCTRINES: Doctrine[] = [
     mains: "Vaccine Maitri as a case study in India's use of health diplomacy to advance soft power — discuss.",
     sourceKey: "mea",
   },
+  {
+    id: "gujral-doctrine",
+    name: "Gujral Doctrine (Non-Reciprocal Goodwill)",
+    period: "1996–present",
+    announcedBy: "I.K. Gujral (Minister of External Affairs, later Prime Minister)",
+    summary:
+      "A landmark set of five principles guiding India's foreign policy toward its immediate South Asian neighbours, based on the foundational premise that as the largest nation in the subcontinent, India must extend unilateral concessions without seeking reciprocal returns in order to build enduring trust and regional stability.",
+    keyIdeas: [
+      "Non-Reciprocity: With neighbours like Bangladesh, Bhutan, Maldives, Nepal, and Sri Lanka, India does not ask for reciprocity, but gives and accommodates what it can in good faith.",
+      "Territorial Non-Use: No South Asian nation should allow its territory to be used against the interest of another country in the region.",
+      "Non-Interference: Strict non-interference in the internal domestic affairs of another regional state.",
+      "Respect for Sovereignty: Respect for the territorial integrity and national sovereignty of all South Asian states.",
+      "Bilateral Dispute Resolution: Settlement of all bilateral disputes through peaceful, direct bilateral negotiations."
+    ],
+    evolution:
+      "Formulated in 1996, the doctrine immediately led to the conclusion of the 30-year Ganga Water Sharing Treaty with Bangladesh (1996) and the Mahakali Treaty with Nepal. While criticized by realists during security crises (e.g. Kargil conflict), its foundational ethos of generous asymmetry remains the core intellectual foundation of the contemporary 'Neighbourhood First' policy.",
+    currentRelevance:
+      "Directly manifested in India's massive $4 billion economic lifeline to Sri Lanka during its 2022 debt crisis, unconditional humanitarian grain assistance to Afghanistan, and high-speed grant infrastructure across Bhutan, Maldives, and Nepal.",
+    prelims: [
+      "The Gujral Doctrine comprises five core principles enunciated by I.K. Gujral in 1996.",
+      "Its defining tenet is 'non-reciprocity' with immediate South Asian neighbours (excluding Pakistan).",
+      "Directly facilitated the historic 1996 Ganga Water Sharing Treaty between India and Bangladesh."
+    ],
+    mains:
+      "Critically evaluate the Gujral Doctrine: does unilateral non-reciprocal concession build durable regional trust or create vulnerabilities against hostile external encirclement?",
+    sourceKey: "mea"
+  },
+  {
+    id: "think-west",
+    name: "Think West / Look West Policy",
+    period: "2014–present",
+    announcedBy: "Government of India (Pivoted under PM Narendra Modi)",
+    summary:
+      "A strategic paradigm shift elevating India's West Asian engagement from a purely transactional relationship (buyer of crude oil and sender of blue-collar expatriate labour) into an expansive, multi-layered strategic partnership covering defense, counter-terrorism, sovereign wealth investments, critical infrastructure, space, and food security across the Gulf Cooperation Council (GCC) and Israel.",
+    keyIdeas: [
+      "Strategic De-hyphenation: India successfully de-hyphenated its deep relations with Israel from its traditional partnerships with Palestine and the Arab Gulf nations, maintaining autonomous, high-level ties with all.",
+      "Security & Maritime Architecture: Moving beyond buyer-seller energy dynamics to counter-terrorism intelligence sharing, extradition treaties, joint tri-service military drills, and naval access to the Port of Duqm in Oman.",
+      "Sovereign Investment & Economic Integration: Landmark bilateral trade pacts like the India-UAE CEPA (2022), bilateral local currency settlement mechanisms, and RuPay card / UPI digital integration across the Gulf.",
+      "Mini-lateral Formats: Pioneering plurilateral frameworks such as I2U2 (India-Israel-UAE-USA) and the India-Middle East-Europe Economic Corridor (IMEC)."
+    ],
+    evolution:
+      "Historically, Indian policy toward West Asia was constrained by Cold War ideologies, ideological solidarity, and cautious balancing. The post-2014 'Think West' policy transformed the Gulf into India's extended maritime neighbourhood, marked by reciprocal highest civilian honours bestowed upon the Indian Prime Minister across UAE, Saudi Arabia, Bahrain, and Egypt.",
+    currentRelevance:
+      "The Gulf states now invest billions in Indian logistics, renewable energy, and retail. Furthermore, the region hosts nearly 9 million Indian expatriates who remit over $40 billion annually, anchoring India's external economic resilience.",
+    prelims: [
+      "India-UAE CEPA (signed February 2022) was India's first comprehensive bilateral trade agreement in over a decade.",
+      "India successfully maintains de-hyphenated strategic ties simultaneously with Iran, Israel, Saudi Arabia, and the UAE.",
+      "The Gulf Cooperation Council (GCC) countries account for over 30% of India's crude oil imports and nearly 9 million Indian diaspora residents."
+    ],
+    mains:
+      "Discuss the transformation of India's 'Look West' policy into a proactive geopolitical strategy, and analyze its endurance amid the ongoing conflicts in West Asia.",
+    sourceKey: "mea"
+  },
+  {
+    id: "connect-central-asia",
+    name: "Connect Central Asia Policy",
+    period: "2012–present",
+    announcedBy: "Government of India (Launched at Bishkek Dialogue)",
+    summary:
+      "A comprehensive diplomatic, security, and economic initiative designed to deepen India's historical, civilisational, and strategic connections with the five post-Soviet Central Asian Republics (CARs: Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan), focusing on the 4Cs: Commerce, Connectivity, Consular, and Community.",
+    keyIdeas: [
+      "Strategic Energy Security: Securing long-term supplies of natural uranium (primarily from Kazakhstan and Uzbekistan) and exploring hydrocarbon potential.",
+      "Overcoming the Pakistan Bottleneck: Creating alternative overland and maritime multimodal trade links through the Iranian port of Chabahar, the INSTC corridor, and the Ashgabat Agreement.",
+      "Regional Security & Counter-Terrorism: Cooperation against religious radicalism, narcotics trafficking from the Golden Crescent, and stabilizing post-US Afghanistan.",
+      "Institutional Summitry: Institutionalisation of the India-Central Asia Summit at the Leaders' level (first held virtually in January 2022)."
+    ],
+    evolution:
+      "Launched in 2012, the policy gained major momentum with PM Modi's historic visit to all five Central Asian states in July 2015. India's full membership in the Shanghai Cooperation Organisation (SCO) in 2017 further embedded New Delhi in Eurasian regional geopolitics.",
+    currentRelevance:
+      "Crucial for Eurasian balance of power as Russia's preoccupation with Ukraine and China's Belt and Road investments create appetite in Central Asia for multi-vector diplomacy and deeper ties with India.",
+    prelims: [
+      "The 'Connect Central Asia' policy was formally unveiled in 2012 at the first India-Central Asia Track II Dialogue in Bishkek.",
+      "The first India-Central Asia Summit was hosted virtually by Prime Minister Modi in January 2022 with the leaders of all five CARs.",
+      "India joined the Ashgabat Agreement on International Transport and Transit in 2018."
+    ],
+    mains:
+      "Analyze the geopolitical and geo-economic impediments in India's 'Connect Central Asia' policy, and assess how the Chabahar and INSTC corridors address the transit dilemma.",
+    sourceKey: "mea"
+  },
+  {
+    id: "vishwa-mitra",
+    name: "Vishwa Mitra & Global South Leadership",
+    period: "2023–present",
+    announcedBy: "Prime Minister Narendra Modi",
+    summary:
+      "A defining contemporary doctrine articulating India's role as a 'Vishwa Mitra' (universal friend) and bridging power in an increasingly polarised world order. It combines proactive multilateral consensus-building (as demonstrated during India's G20 Presidency) with an unyielding championing of the priorities and developmental voice of the Global South.",
+    keyIdeas: [
+      "Voice of Global South: Hosting three successive 'Voice of Global South Summits' (2023, 2023, 2024), bringing together over 120 developing nations to formulate common development agendas.",
+      "African Union Permanent G20 Membership: India's historic achievement at the 2023 New Delhi G20 Summit in securing permanent G20 membership for the 55-nation African Union.",
+      "Digital Public Infrastructure (DPI) as Global Public Goods: Democratising technology by sharing open-source platforms (India Stack, UPI, CoWIN, DigiLocker) with developing countries without predatory debt.",
+      "Climate Justice & Lifestyle: Spearheading global climate action based on equity, through initiatives like the International Solar Alliance (ISA), Coalition for Disaster Resilient Infrastructure (CDRI), and Mission LiFE (Lifestyle for Environment)."
+    ],
+    evolution:
+      "Evolving from historical Non-Alignment and later Strategic Autonomy, 'Vishwa Mitra' moves from defensive neutrality to active agenda-setting and bridging geopolitical divides between the West and the Global South.",
+    currentRelevance:
+      "Positions India as an indispensable consensus-builder at global summits, trusted by both the developed world and low-income developing nations.",
+    prelims: [
+      "The African Union was granted permanent membership in the G20 under India's G20 Presidency at the New Delhi Summit in September 2023.",
+      "India has hosted three Voice of Global South Summits under the overarching theme of 'Unity of Voice, Unity of Purpose'.",
+      "Mission LiFE (Lifestyle for Environment) was launched globally by India and the UN Secretary-General in October 2022 at Kevadia, Gujarat."
+    ],
+    mains:
+      "Discuss how India's 'Vishwa Mitra' posture and leadership of the Global South offer an alternative paradigm to traditional great-power competition in international relations.",
+    sourceKey: "pmo"
+  }
 ];

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Bookmark, ChevronRight, MapPin, Coins, Target, Layers, Users, AlertTriangle } from "lucide-react";
+import { Bookmark, ChevronRight, MapPin, Coins, Target, Layers, Users, AlertTriangle, Compass, X } from "lucide-react";
 import { COUNTRIES } from "../data/countries";
 import { ORGANISATIONS } from "../data/organisations";
 import { Pill, BackBtn, FactBox, Block, TagBlock, SectionLabel, Stamp, NoteEditor, VerifyBanner } from "../components/ui";
@@ -15,76 +15,208 @@ export function IRHome({
 }) {
   const navigate = useNavigate();
   const [tab, setTab] = useState<"countries" | "orgs">("countries");
+  const [countryRegion, setCountryRegion] = useState<string>("all");
+  const [filterQuery, setFilterQuery] = useState<string>("");
+
+  const filteredCountries = COUNTRIES.filter((c) => {
+    const matchRegion =
+      countryRegion === "all" ||
+      (countryRegion === "neighbourhood" && (c.region.includes("Neighbourhood") || ["nepal", "bangladesh", "srilanka", "maldives", "bhutan", "myanmar", "china"].includes(c.id))) ||
+      (countryRegion === "major-powers" && ["usa", "russia", "japan", "france", "uk", "germany"].includes(c.id)) ||
+      (countryRegion === "indopacific" && (c.region.includes("Southeast Asia") || c.region.includes("Indo-Pacific") || ["australia", "vietnam", "indonesia", "singapore"].includes(c.id))) ||
+      (countryRegion === "westasia" && (c.region.includes("West Asia") || c.region.includes("Gulf") || ["israel", "uae", "iran", "saudiarabia", "oman", "egypt"].includes(c.id))) ||
+      (countryRegion === "africa-indianocean" && (c.region.includes("Africa") || c.region.includes("Indian Ocean") || ["mauritius", "seychelles", "southafrica"].includes(c.id))) ||
+      (countryRegion === "other" && ["kazakhstan", "italy", "canada", "brazil"].includes(c.id));
+
+    const matchQuery =
+      !filterQuery.trim() ||
+      c.name.toLowerCase().includes(filterQuery.toLowerCase()) ||
+      c.capital.toLowerCase().includes(filterQuery.toLowerCase()) ||
+      c.region.toLowerCase().includes(filterQuery.toLowerCase()) ||
+      c.relationship.toLowerCase().includes(filterQuery.toLowerCase());
+
+    return matchRegion && matchQuery;
+  });
+
+  const filteredOrgs = ORGANISATIONS.filter((o) => {
+    return (
+      !filterQuery.trim() ||
+      o.name.toLowerCase().includes(filterQuery.toLowerCase()) ||
+      o.purpose.toLowerCase().includes(filterQuery.toLowerCase()) ||
+      o.members.some((m) => m.toLowerCase().includes(filterQuery.toLowerCase()))
+    );
+  });
 
   return (
     <div>
-      <h1 className="font-serif text-2xl mb-1">India & The World</h1>
-      <p className="text-[13px] text-[#8a7c58] mb-5">Bilateral profiles and multilateral groupings, each with a prelims fact-set and a mains angle.</p>
-      <div className="flex gap-1.5 mb-5">
-        {(
-          [
-            ["countries", "Bilateral Relations"],
-            ["orgs", "Groupings & Organisations"],
-          ] as const
-        ).map(([id, label]) => (
-          <button
-            key={id}
-            onClick={() => setTab(id)}
-            className={`text-[12.5px] px-3.5 py-1.5 rounded-full border ${
-              tab === id ? "bg-[#1f2937] text-white border-[#1f2937]" : "bg-white border-[#e0d6bd] text-[#5b5340]"
-            }`}
-          >
-            {label}
-          </button>
-        ))}
+      {/* Top Banner introducing Strategic Map Lab */}
+      <div className="mb-6 p-4 rounded-2xl bg-gradient-to-r from-[#1f2937] to-[#111827] text-white border border-slate-700/80 shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#b8863b]">
+            <Compass size={15} /> Visual Interactive Spatial Atlas
+          </div>
+          <h3 className="font-serif text-lg font-bold mt-1 text-white">
+            Explore Strategic Overseas Ports, Chokepoints &amp; Corridors
+          </h3>
+          <p className="text-xs text-slate-300 mt-0.5">
+            View Chabahar, Duqm, Sabang, Agalega, Malacca, Hormuz, IMEC &amp; INSTC on an interactive vector map.
+          </p>
+        </div>
+        <button
+          onClick={() => navigate("/map")}
+          className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#b8863b] hover:bg-amber-600 text-slate-950 font-bold text-xs shadow-sm transition-colors"
+        >
+          Open Strategic Map Lab <ChevronRight size={14} />
+        </button>
       </div>
+
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+        <div>
+          <h1 className="font-serif text-2xl md:text-3xl mb-1 text-[#1f2937] dark:text-slate-100">India &amp; The World</h1>
+          <p className="text-[13px] text-[#8a7c58] dark:text-slate-400">
+            30 bilateral partner profiles and 22 multilateral organisations, updated with 2024–2026 developments.
+          </p>
+        </div>
+
+        {/* Tab Selector */}
+        <div className="flex gap-1.5 self-start sm:self-auto bg-white dark:bg-slate-900 p-1 rounded-xl border border-[#e0d6bd] dark:border-slate-800">
+          {(
+            [
+              ["countries", `Bilateral Relations (${COUNTRIES.length})`],
+              ["orgs", `Groupings & Orgs (${ORGANISATIONS.length})`],
+            ] as const
+          ).map(([id, label]) => (
+            <button
+              key={id}
+              onClick={() => {
+                setTab(id);
+                setFilterQuery("");
+              }}
+              className={`text-[12.5px] px-3.5 py-1.5 rounded-lg transition-colors font-medium ${
+                tab === id
+                  ? "bg-[#1f2937] text-white dark:bg-[#b8863b] dark:text-slate-950 font-semibold shadow-sm"
+                  : "text-[#5b5340] dark:text-slate-400 hover:bg-[#f3ede0] dark:hover:bg-slate-800"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Region & Keyword Filter Controls */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-5">
+        {tab === "countries" && (
+          <div className="flex flex-wrap items-center gap-1.5 text-xs">
+            {[
+              ["all", "All (30)"],
+              ["neighbourhood", "Neighbourhood (7)"],
+              ["major-powers", "Major Powers (6)"],
+              ["indopacific", "Indo-Pacific & ASEAN (4)"],
+              ["westasia", "West Asia & Gulf (6)"],
+              ["africa-indianocean", "Africa & Indian Ocean (3)"],
+              ["other", "Central Asia, Americas & Europe (4)"],
+            ].map(([regId, regLabel]) => (
+              <button
+                key={regId}
+                onClick={() => setCountryRegion(regId)}
+                className={`px-3 py-1 rounded-full border text-[11.5px] transition-colors ${
+                  countryRegion === regId
+                    ? "bg-[#b8863b] text-white border-[#b8863b] font-medium"
+                    : "bg-white dark:bg-slate-900 border-[#e0d6bd] dark:border-slate-800 text-[#5b5340] dark:text-slate-300 hover:border-[#b8863b]"
+                }`}
+              >
+                {regLabel}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Live Filter Search input */}
+        <div className="relative w-full md:w-64 self-end">
+          <input
+            type="text"
+            placeholder={tab === "countries" ? "Search country or capital..." : "Search organisation..."}
+            value={filterQuery}
+            onChange={(e) => setFilterQuery(e.target.value)}
+            className="w-full text-xs pl-3 pr-8 py-1.5 bg-white dark:bg-slate-900 border border-[#e0d6bd] dark:border-slate-800 rounded-lg text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-[#b8863b]"
+          />
+          {filterQuery && (
+            <button onClick={() => setFilterQuery("")} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400">
+              <X size={12} />
+            </button>
+          )}
+        </div>
+      </div>
+
       {tab === "countries" ? (
         <div className="grid md:grid-cols-2 gap-4">
-          {COUNTRIES.map((c) => (
-            <div key={c.id} className="bg-white border border-[#e0d6bd] rounded-xl p-4">
-              <div className="flex items-start justify-between gap-2">
-                <button onClick={() => navigate(`/ir/country/${c.id}`)} className="text-left font-serif text-[15.5px] hover:text-[#b8863b] flex items-center gap-1.5">
-                  <MapPin size={14} className="text-[#b8863b]" />
-                  {c.name}
-                </button>
-                <button onClick={() => toggleBookmark("countries", c.id)}>
-                  <Bookmark size={16} className={bookmarks.countries.includes(c.id) ? "fill-[#b8863b] text-[#b8863b]" : "text-[#c9bd9c]"} />
+          {filteredCountries.map((c) => (
+            <div key={c.id} className="bg-white dark:bg-slate-900 border border-[#e0d6bd] dark:border-slate-800 rounded-2xl p-4 shadow-sm hover:border-[#b8863b] dark:hover:border-slate-700 transition-all flex flex-col justify-between">
+              <div>
+                <div className="flex items-start justify-between gap-2">
+                  <button onClick={() => navigate(`/ir/country/${c.id}`)} className="text-left font-serif text-[16px] font-bold text-[#1f2937] dark:text-slate-100 hover:text-[#b8863b] flex items-center gap-1.5">
+                    <MapPin size={15} className="text-[#b8863b] shrink-0" />
+                    {c.name}
+                  </button>
+                  <button onClick={() => toggleBookmark("countries", c.id)} className="p-1 rounded-md hover:bg-black/5 dark:hover:bg-white/5">
+                    <Bookmark size={16} className={bookmarks.countries.includes(c.id) ? "fill-[#b8863b] text-[#b8863b]" : "text-[#c9bd9c] dark:text-slate-600"} />
+                  </button>
+                </div>
+                <div className="text-[12px] text-[#8a7c58] dark:text-slate-400 mt-1">
+                  {c.region} · Capital: <span className="font-semibold text-slate-700 dark:text-slate-300">{c.capital}</span>
+                </div>
+                <p className="text-[12.5px] text-[#4a4432] dark:text-slate-300 mt-2 leading-relaxed line-clamp-3">{c.relationship}</p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-[#eee7d6] dark:border-slate-800 flex items-center justify-between">
+                <span className="text-[11px] text-[#8a7c58] dark:text-slate-400">{c.organisations.slice(0, 2).join(", ")}</span>
+                <button onClick={() => navigate(`/ir/country/${c.id}`)} className="text-[12px] font-semibold text-[#b8863b] flex items-center gap-0.5 hover:underline">
+                  Full profile <ChevronRight size={13} />
                 </button>
               </div>
-              <div className="text-[12px] text-[#8a7c58] mt-1">
-                {c.region} · Capital: {c.capital}
-              </div>
-              <p className="text-[12.5px] text-[#4a4432] mt-2 leading-relaxed line-clamp-3">{c.relationship}</p>
-              <button onClick={() => navigate(`/ir/country/${c.id}`)} className="text-[11.5px] font-medium text-[#b8863b] flex items-center gap-0.5 mt-2.5">
-                Full profile <ChevronRight size={13} />
-              </button>
             </div>
           ))}
+          {filteredCountries.length === 0 && (
+            <div className="col-span-2 py-8 text-center text-xs text-slate-500">
+              No bilateral partners match your filter.
+            </div>
+          )}
         </div>
       ) : (
         <div className="grid md:grid-cols-2 gap-4">
-          {ORGANISATIONS.map((o) => (
-            <div key={o.id} className="bg-white border border-[#e0d6bd] rounded-xl p-4">
-              <div className="flex items-start justify-between gap-2">
-                <button onClick={() => navigate(`/ir/org/${o.id}`)} className="text-left font-serif text-[15.5px] hover:text-[#b8863b]">
-                  {o.name}
-                </button>
-                <button onClick={() => toggleBookmark("orgs", o.id)}>
-                  <Bookmark size={16} className={bookmarks.orgs.includes(o.id) ? "fill-[#b8863b] text-[#b8863b]" : "text-[#c9bd9c]"} />
+          {filteredOrgs.map((o) => (
+            <div key={o.id} className="bg-white dark:bg-slate-900 border border-[#e0d6bd] dark:border-slate-800 rounded-2xl p-4 shadow-sm hover:border-[#b8863b] dark:hover:border-slate-700 transition-all flex flex-col justify-between">
+              <div>
+                <div className="flex items-start justify-between gap-2">
+                  <button onClick={() => navigate(`/ir/org/${o.id}`)} className="text-left font-serif text-[16px] font-bold text-[#1f2937] dark:text-slate-100 hover:text-[#b8863b]">
+                    {o.name}
+                  </button>
+                  <button onClick={() => toggleBookmark("orgs", o.id)} className="p-1 rounded-md hover:bg-black/5 dark:hover:bg-white/5">
+                    <Bookmark size={16} className={bookmarks.orgs.includes(o.id) ? "fill-[#b8863b] text-[#b8863b]" : "text-[#c9bd9c] dark:text-slate-600"} />
+                  </button>
+                </div>
+                <div className="text-[12px] text-[#8a7c58] dark:text-slate-400 mt-1">Est. {o.established} · HQ: {o.headquarters}</div>
+                <p className="text-[12.5px] text-[#4a4432] dark:text-slate-300 mt-2 leading-relaxed line-clamp-2">{o.purpose}</p>
+                <div className="flex flex-wrap gap-1 mt-2.5">
+                  {o.members.slice(0, 4).map((m, i) => (
+                    <Pill key={i}>{m}</Pill>
+                  ))}
+                  {o.members.length > 4 && <Pill>+{o.members.length - 4} more</Pill>}
+                </div>
+              </div>
+              <div className="mt-4 pt-3 border-t border-[#eee7d6] dark:border-slate-800 flex items-center justify-between">
+                <span className="text-[11px] text-[#8a7c58] dark:text-slate-400">{o.indiaStatus}</span>
+                <button onClick={() => navigate(`/ir/org/${o.id}`)} className="text-[12px] font-semibold text-[#b8863b] flex items-center gap-0.5 hover:underline">
+                  Full profile <ChevronRight size={13} />
                 </button>
               </div>
-              <div className="text-[12px] text-[#8a7c58] mt-1">Est. {o.established}</div>
-              <div className="flex flex-wrap gap-1 mt-2">
-                {o.members.slice(0, 5).map((m, i) => (
-                  <Pill key={i}>{m}</Pill>
-                ))}
-                {o.members.length > 5 && <Pill>+{o.members.length - 5} more</Pill>}
-              </div>
-              <button onClick={() => navigate(`/ir/org/${o.id}`)} className="text-[11.5px] font-medium text-[#b8863b] flex items-center gap-0.5 mt-2.5">
-                Full profile <ChevronRight size={13} />
-              </button>
             </div>
           ))}
+          {filteredOrgs.length === 0 && (
+            <div className="col-span-2 py-8 text-center text-xs text-slate-500">
+              No organisations match your search query.
+            </div>
+          )}
         </div>
       )}
     </div>
