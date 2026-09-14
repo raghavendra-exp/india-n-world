@@ -21,6 +21,9 @@ import {
   ChevronRight,
   ExternalLink,
   MapPin,
+  HelpCircle,
+  Landmark,
+  Network,
   LucideIcon,
 } from "lucide-react";
 import { useBookmarks, useNotes, useProgress } from "./lib/hooks";
@@ -44,6 +47,9 @@ import PrelimsLab from "./pages/Prelims";
 import MainsLab from "./pages/Mains";
 import Revision from "./pages/Revision";
 import Saved from "./pages/Saved";
+import PyqExplorer from "./pages/PyqExplorer";
+import UppscSpecial from "./pages/UppscSpecial";
+import GroupingsMatrix from "./pages/GroupingsMatrix";
 
 interface NavGroup {
   group: string;
@@ -56,6 +62,7 @@ const NAV_GROUPS: NavGroup[] = [
     items: [
       { path: "/", label: "Dashboard", icon: LayoutDashboard },
       { path: "/map", label: "Strategic Map Lab", icon: Compass },
+      { path: "/groupings", label: "Treaties & Regimes", icon: Network },
       { path: "/ir", label: "Int'l Relations", icon: Globe2 },
       { path: "/doctrines", label: "Doctrines & Strategy", icon: ShieldCheck },
       { path: "/current-affairs", label: "Current Affairs", icon: Newspaper },
@@ -63,12 +70,16 @@ const NAV_GROUPS: NavGroup[] = [
   },
   {
     group: "Governance & Policies",
-    items: [{ path: "/schemes", label: "Govt Schemes", icon: ScrollText }],
+    items: [
+      { path: "/schemes", label: "Govt Schemes", icon: ScrollText },
+      { path: "/uppsc", label: "UPPSC State Special", icon: Landmark },
+    ],
   },
   {
-    group: "UPSC Exam Labs",
+    group: "UPSC & State PSC Labs",
     items: [
-      { path: "/prelims", label: "Prelims Lab (MCQs)", icon: ListChecks },
+      { path: "/pyq", label: "Solved PYQs (2011–2024)", icon: HelpCircle },
+      { path: "/prelims", label: "Prelims Lab (106 MCQs)", icon: ListChecks },
       { path: "/mains", label: "Mains Answer Lab", icon: PenLine },
     ],
   },
@@ -301,6 +312,9 @@ export default function App() {
               path="/doctrines/:id"
               element={<DoctrineDetail bookmarks={bookmarks} toggleBookmark={toggleBookmark} notes={notes} saveNote={saveNote} />}
             />
+            <Route path="/groupings" element={<GroupingsMatrix />} />
+            <Route path="/uppsc" element={<UppscSpecial />} />
+            <Route path="/pyq" element={<PyqExplorer />} />
             <Route path="/prelims" element={<PrelimsLab recordQuizAttempt={recordQuizAttempt} progress={progress} />} />
             <Route path="/mains" element={<MainsLab recordMainsAttempt={recordMainsAttempt} />} />
             <Route path="/revision" element={<Revision markRevisionSeen={markRevisionSeen} progress={progress} />} />

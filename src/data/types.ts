@@ -132,3 +132,22 @@ export interface MapNode {
   linkId?: string; // e.g. "iran", "oman", "indonesia"
   sourceKey: string;
 }
+
+export interface PYQItem {
+  id: string;
+  exam: string;
+  year: number;
+  topic: string;
+  question: string;
+  options: string[];
+  correctOption: number;
+  bookReference: {
+    pavneetSingh?: string;
+    pushpeshPant?: string;
+    officialSource?: string;
+    ncertOrPib?: string;
+  };
+  plainExplanation: string;
+  optionElimination: Record<string, string>;
+  topperTrick: string;
+}

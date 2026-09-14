@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ScrollText, Globe2, ListChecks, PenLine, ChevronRight, Compass } from "lucide-react";
+import { ScrollText, Globe2, ListChecks, PenLine, ChevronRight, Compass, HelpCircle, Landmark, Network } from "lucide-react";
 import { SCHEMES } from "../data/schemes";
 import { COUNTRIES } from "../data/countries";
+import { MCQS } from "../data/mcqs";
+import { PYQ_ITEMS } from "../data/pyqs";
 import { SectionLabel, VerifyBanner } from "../components/ui";
 import type { Bookmarks, Progress } from "../lib/hooks";
 
@@ -15,8 +17,8 @@ export default function Dashboard({ progress, bookmarks }: { progress: Progress;
   const totalBookmarks = bookmarks.schemes.length + bookmarks.countries.length + bookmarks.orgs.length;
 
   const metrics = [
-    { label: "Schemes explored", value: `${schemesTouched}/${SCHEMES.length}`, pct: Math.round((schemesTouched / SCHEMES.length) * 100) },
-    { label: "Countries explored", value: `${countriesTouched}/${COUNTRIES.length}`, pct: Math.round((countriesTouched / COUNTRIES.length) * 100) },
+    { label: "Solved PYQs Bank", value: `${PYQ_ITEMS.length} Qs`, pct: 100 },
+    { label: "Prelims Practice Bank", value: `${MCQS.length} MCQs`, pct: 100 },
     { label: "Prelims accuracy", value: quizTotal ? `${accuracy}%` : "—", pct: accuracy },
     { label: "Mains answers written", value: `${progress.mainsAttempts.length}`, pct: Math.min(100, progress.mainsAttempts.length * 20) },
   ];
@@ -26,7 +28,7 @@ export default function Dashboard({ progress, bookmarks }: { progress: Progress;
       <div className="mb-7">
         <h1 className="font-serif text-2xl md:text-3xl leading-tight">Today's briefing</h1>
         <p className="text-[13px] text-[#8a7c58] mt-1.5">
-          Schemes, foreign relations, prelims practice and mains structure — organised the way the syllabus actually connects.
+          Solved PYQs (2011–2024), foreign relations, UPPSC special, schemes &amp; 100+ prelims practice MCQs — syllabus-grounded with standard book citations.
         </p>
       </div>
 
@@ -46,12 +48,14 @@ export default function Dashboard({ progress, bookmarks }: { progress: Progress;
         <div className="lg:col-span-2 bg-white border border-[#e0d6bd] rounded-xl p-5">
           <SectionLabel>Quick start</SectionLabel>
           <div className="grid sm:grid-cols-2 gap-3 mt-2">
-            <QuickAction icon={Compass} title="Strategic Map Lab" desc="Interactive overseas ports, chokepoints & corridors" to="/map" />
+            <QuickAction icon={HelpCircle} title={`Solved PYQ Explorer (${PYQ_ITEMS.length})`} desc="UPSC (2011–2024) & UPPSC with Pavneet Singh & MEA citations" to="/pyq" />
+            <QuickAction icon={Compass} title="Google Satellite Map Lab" desc="Overseas ports, straits, chokepoints & corridors" to="/map" />
+            <QuickAction icon={Network} title="Treaties & Regimes Matrix" desc="Quad, I2U2, BRICS+, SCO, 4 Export Regimes & IMEC" to="/groupings" />
+            <QuickAction icon={Landmark} title="UPPSC State Special" desc="UP Defence Corridor (6 nodes), ODOP & Nepal Border" to="/uppsc" />
+            <QuickAction icon={ListChecks} title={`Prelims Lab (${MCQS.length} MCQs)`} desc="Statement-I & II, pair-matching & trap analysis" to="/prelims" />
             <QuickAction icon={Globe2} title="Bilateral profiles (30)" desc="Neighbourhood, major powers & extended ties" to="/ir" />
-            <QuickAction icon={ScrollText} title="Browse schemes (30)" desc="Filter by sector, ministry, funding, DBT" to="/schemes" />
-            <QuickAction icon={ListChecks} title="Prelims Lab (48 MCQs)" desc="Statement-based MCQs with trap analysis" to="/prelims" />
+            <QuickAction icon={ScrollText} title="Browse schemes (30)" desc="PM Surya Ghar, PM-JANMAN, Vishwakarma, etc." to="/schemes" />
             <QuickAction icon={PenLine} title="Mains Lab (18 Qs)" desc="Timed answer writing with structure scoring" to="/mains" />
-            <QuickAction icon={ChevronRight} title="Foreign policy doctrines" desc="Panchsheel to Gujral & Vishwa Mitra" to="/doctrines" />
           </div>
         </div>
         <div className="bg-white border border-[#e0d6bd] rounded-xl p-5">
